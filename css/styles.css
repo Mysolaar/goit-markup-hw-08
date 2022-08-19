@@ -1,53 +1,185 @@
-
-a {
-    text-decoration: none;
+:root {
+    --BackgroundColorFirst: #e5e5e5;
+    --BackgroundColorSecond: #2f303a;
+    --FontColorFirst: #212121;
+    --FontColorSecond: #757575;
+    --SelectionColor: #2196f3;
+    --ColorWhite: #ffffff;
+    --ColorWhiteTransp: #ffffff99;
+    --ColorAlmostWhite: #f5f4fa;
 }
 
 body {
-    font-family: 'Roboto', 'Verdana', 'Tahoma', sans-serif;
+    background-color: var(--BackgroundColorFirst);
+    color: var(--FontColorFirst);
+    font-family: "Roboto", "Raleway",'Verdana',
+        'Tahoma',  sans-serif;
 }
-h1 {font-family: 'Roboto';
+
+.link-logo {
+    font-family: "Raleway";
     font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--SelectionColor);
+    text-decoration: none;
+}
+
+.logo-color-other-header {
+    color: var(--FontColorFirst);
+}
+
+.logo-color-other-footer {
+    color: var(--ColorWhite);
+}
+
+.logo-color-other {
+    color: var(--FontColorFirst);
+}
+
+.link {
+    text-decoration: none;
+    color: var(--FontColorFirst);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.link:hover {
+    color: var(--SelectionColor);
+}
+
+.link:focus {
+    color: var(--SelectionColor);
+}
+
+.link-header-contact {
+    color: var(--FontColorSecond);
+}
+
+.link-header-contact:focus {
+    color: var(--SelectionColor);
+}
+
+.link-footer {
+    color: var(--FontColorSecond);
+}
+
+.header-class {background: var(--ColorWhite);}
+
+
+.link-footer:focus {
+    color: var(--SelectionColor);
+}
+
+.link-footer {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--ColorWhite);
+}
+
+.footer {
+    background: var(--BackgroundColorSecond);
+}
+
+.address-footer {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--ColorWhite);
+}
+
+.buttons {
+    background: var(--ColorAlmostWhite);
+    color: var(--FontColorFirst);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+}
+
+.buttons:hover {
+    background: var(--SelectionColor);
+    color: var(--ColorWhite);
+    cursor: pointer;
+}
+
+.buttons:focus {
+    background: var(--SelectionColor);
+    color: var(--ColorWhite);
+    cursor: pointer;
+}
+
+.buttons-order {
+    background: var(--SelectionColor);
+    color: var(--ColorWhite);
+    background: var(--SelectionColor);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 1.875;
+    line-height: 30px;
+}
+
+.buttons-order:hover {
+    background: var(--ColorAlmostWhite);
+    color: var(--FontColorFirst);
+    cursor: pointer;
+}
+
+.buttons-order:focus {
+    background: var(--ColorAlmostWhite);
+    color: var(--FontColorFirst);
+    cursor: pointer;
+}
+
+.title-main {
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
-    text-align: center;
+    line-height: 1.36;
     letter-spacing: 0.06em;
+    text-align: center;
     text-transform: uppercase;
-    color: #FFFFFF;
-    background: #2F303A
+    color: var(--ColorWhite);
+    background: var(--BackgroundColorSecond);
 }
-h2 {font-family: 'Roboto';
-    font-style: normal;
+
+.title-second {
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
 }
-h3 {font-family: 'Roboto';
-    font-style: normal;
+
+.title-third {
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    color: var(--FontColorFirst);
+}
 
-    color: #212121;
-}
-p {font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
+.p-text {
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--FontColorSecond);
 }
-.title-name {font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 36px;
-    letter-spacing: 0.06em;
-    color: #212121;}
+
+.image-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.187;
+    letter-spacing: 0.03em;
+}
+
+.image-designation {
+    font-size: 16px;
+    line-height: 1.187;
+    letter-spacing: 0.03em;
+    color: var(--FontColorSecond);
+}
