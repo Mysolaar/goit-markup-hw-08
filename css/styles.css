@@ -64,6 +64,9 @@ body {
     color: var(--SelectionColor);
 }
 
+.link-portfolio {
+    color: var(--SelectionColor);}
+
 .link-footer {
     color: var(--FontColorSecond);
 }
@@ -116,7 +119,6 @@ body {
 .buttons-order {
     background: var(--SelectionColor);
     color: var(--ColorWhite);
-    background: var(--SelectionColor);
     border-radius: 4px;
     font-weight: 700;
     font-size: 1.875;
@@ -182,4 +184,23 @@ body {
     line-height: 1.187;
     letter-spacing: 0.03em;
     color: var(--FontColorSecond);
+}
+
+.lorem-class-one {
+    background: var(--ColorWhite);}
+
+.section-one {
+    background: var(--BackgroundColorSecond);
+}
+
+.section-two {
+    background: var(--ColorWhite);
+}
+
+.section-three {
+    background: var(--ColorAlmostWhite);
+}
+
+.section-four {
+    background: var(--ColorWhite);
 }
