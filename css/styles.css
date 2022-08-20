@@ -186,14 +186,14 @@ body {
     color: var(--FontColorSecond);
 }
 
-.section-three {
+.section-lightgray {
     background: var(--ColorAlmostWhite);
 }
 
-.the-main-class {
+.section-white {
     background: var(--ColorWhite);
 }
 
-.section-one {
+.section-darkgrey {
     background: var(--BackgroundColorSecond);
 }
