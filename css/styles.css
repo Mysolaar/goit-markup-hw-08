@@ -186,21 +186,10 @@ body {
     color: var(--FontColorSecond);
 }
 
-.lorem-class-one {
-    background: var(--ColorWhite);}
-
-.section-one {
-    background: var(--BackgroundColorSecond);
-}
-
-.section-two {
-    background: var(--ColorWhite);
-}
-
 .section-three {
     background: var(--ColorAlmostWhite);
 }
 
-.section-four {
+.the-main-class {
     background: var(--ColorWhite);
 }
