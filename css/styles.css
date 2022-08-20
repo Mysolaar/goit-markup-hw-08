@@ -193,3 +193,7 @@ body {
 .the-main-class {
     background: var(--ColorWhite);
 }
+
+.section-one {
+    background: var(--BackgroundColorSecond);
+}
