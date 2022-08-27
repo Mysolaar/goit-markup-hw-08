@@ -9,12 +9,22 @@
     --ColorAlmostWhite: #f5f4fa;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     background-color: var(--BackgroundColorFirst);
     color: var(--FontColorFirst);
     font-family: "Roboto", "Raleway",'Verdana',
         'Tahoma',  sans-serif;
+    margin: 0 auto;
+    padding: 0;
 }
+
+ul {list-style: none;}
 
 .link-logo {
     font-family: "Raleway";
@@ -25,6 +35,7 @@ body {
     letter-spacing: 0.03em;
     color: var(--SelectionColor);
     text-decoration: none;
+    margin:0 auto;
 }
 
 .logo-color-other-header {
@@ -64,14 +75,15 @@ body {
     color: var(--SelectionColor);
 }
 
-.link-portfolio {
+.link-on-site {
     color: var(--SelectionColor);}
 
 .link-footer {
     color: var(--FontColorSecond);
 }
 
-.header-class {background: var(--ColorWhite);}
+.header-class {background: var(--ColorWhite);
+}
 
 
 .link-footer:focus {
@@ -82,11 +94,13 @@ body {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--ColorWhite);
+    color: var(--FontColorSecond);
 }
 
 .footer {
     background: var(--BackgroundColorSecond);
+    max-height:252px;
+    padding: 60px 0 60px 0;
 }
 
 .address-footer {
@@ -102,6 +116,7 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
+    text-align: center;
 }
 
 .buttons:hover {
@@ -123,6 +138,9 @@ body {
     font-weight: 700;
     font-size: 1.875;
     line-height: 30px;
+    width: 200px;
+    height: 50px;
+    border: 0;
 }
 
 .buttons-order:hover {
@@ -146,6 +164,8 @@ body {
     text-transform: uppercase;
     color: var(--ColorWhite);
     background: var(--BackgroundColorSecond);
+    width: 696px;
+    height: 120px;
 }
 
 .title-second {
@@ -170,6 +190,8 @@ body {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--FontColorSecond);
+    width: 270px;
+    height: 75px;
 }
 
 .image-name {
@@ -177,6 +199,9 @@ body {
     font-size: 16px;
     line-height: 1.187;
     letter-spacing: 0.03em;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px 0 10px 0;
 }
 
 .image-designation {
@@ -184,6 +209,9 @@ body {
     line-height: 1.187;
     letter-spacing: 0.03em;
     color: var(--FontColorSecond);
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 30px;
 }
 
 .section-lightgray {
@@ -196,4 +224,110 @@ body {
 
 .section-darkgrey {
     background: var(--BackgroundColorSecond);
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding:0;
+    display: flex;
+}
+
+.section {
+    padding: 94px 0 94px 0;
+
+}
+.menu {
+    display: flex;
+    flex-direction: row ;
+    gap:46px;
+}
+
+.going-to-row {
+    display: flex;
+    flex-direction: row;}
+
+.going-to-column {display: flex;
+    flex-direction: column;
+}
+.figure-flex {
+    display: flex;
+    flex-direction: row;
+}
+.mail-tel-header {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;}
+
+.footer-mail-tel{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    
+}
+p {margin:0 auto}
+
+.header-flex { 
+    display: flex;
+    align-items: center;
+    width: auto;
+    border-bottom: 1px solid #ECECEC;}
+
+.main-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spacing-flex {
+   display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.item-flex {
+    background-color: var(--white);
+    box-shadow:
+        0px 1px 3px rgb(0 0 0 / 12%),
+        0px 1px 1px rgb(0 0 0 / 14%),
+        0px 2px 1px rgb(0 0 0 / 20%);
+    border-radius: 0px 0px 4px 4px;
+    padding: 0;
+    margin:0 auto;}
+
+h2 {margin:0 auto;
+    padding-bottom: 50px;
+}
+
+.block {display: block;}
+
+.address-footer {padding-top: 20px;}
+.menu {padding-left: 93px;
+padding-right: 371px;}
+
+.buttons-pfolio {
+    border-radius: 4px;
+    border: 0;
+    padding: 6px 22px 6px 22px;}
+
+.portfolio-buttons-flex {
+    display: flex;
+    justify-content: center;
+    }
+
+.pfolio-btn-flex {display: flex;
+    justify-content: center;
+    gap:8px; }
+
+.wraping-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap:30px;
+margin: 0 auto;}
+
+.pfolio-spacing-flex {
+    margin: 0 auto;
+    padding-top: 50px; 
 }

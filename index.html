@@ -10,45 +10,41 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
   </head>
   <body>
     <header class="header-class">
-      <a class="link-logo" href="index.html"
-        >Web<span class="logo-color-other-header">Studio</span></a
-      >
-      <nav class="navigation">
-        <ul class="header">
-          <li><a class="link link-header" href="#">Agencja</a></li>
+      <div class="container header-flex">
+        <a class="link-logo" href="index.html">Web<span class="logo-color-other-header">Studio</span></a>
+       <nav class="navigation">
+        <ul class="menu">
+          <li><a class="link link-header link-on-site" href="#">Agencja</a></li>
           <li>
             <a class="link link-header" href="portfolio.html">Portfolio</a>
           </li>
           <li><a href="#" class="link link-header">Kontakt</a></li>
         </ul>
       </nav>
-      <ul class="header">
+      <ul class="mail-tel-header">
         <li>
-          <a class="link link-header-contact" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
+          <a class="link link-header-contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
         </li>
         <li>
-          <a class="link link-header-contact" href="tel:+380961111111"
-            >+38 096 111 11 11</a
-          >
+          <a class="link link-header-contact" href="tel:+48 111 111 111">+48 111 111 111</a>
         </li>
       </ul>
+      </div>
     </header>
     <main class="section-white">
-      <section class="section-darkgrey">
-        <h1 class="title-main">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+      <section class="section-darkgrey section">
+        <div class="container going-to-column main-flex"><h1 class="title-main">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
         <button class="buttons buttons-order" type="button">
           Zamów usługę
-        </button>
+        </button></div>
       </section>
-      <section>
-        <ul>
+      <section class="section">
+        <ul class="going-to-row spacing-flex">
           <li>
             <h3 class="title-third">LOREM IPSUM</h3>
             <p class="p-text">
@@ -77,12 +73,12 @@
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
-        </ul>
+        </ul></div>
       </section>
-      <section>
+      <section class="section"><div class="container going-to-column">
         <h2 class="title-second">Czym się zajmujemy</h2>
         <figure>
-          <ul>
+          <ul class="spacing-flex">
             <li>
               <img
                 src="./images/img01.jpg"
@@ -108,13 +104,13 @@
               />
             </li>
           </ul>
-        </figure>
+        </figure></div>
       </section>
-      <section class="section-lightgray">
+      <section class="section-lightgray section"><div class="container going-to-column">
         <h2 class="title-second">Nasz zespół</h2>
-        <ul>
+        <ul class="spacing-flex">
           <li>
-            <figure>
+            <figure class="item-flex">
               <img
                 src="./images/img04.jpg"
                 alt="John Doe, Product Designer"
@@ -128,7 +124,7 @@
             </figure>
           </li>
           <li>
-            <figure>
+            <figure class="item-flex">
               <img
                 src="./images/img05.jpg"
                 alt="John Doe, Frontend Developer"
@@ -142,7 +138,7 @@
             </figure>
           </li>
           <li>
-            <figure>
+            <figure class="item-flex">
               <img
                 src="./images/img06.jpg"
                 alt="John Doe, Marketing"
@@ -156,7 +152,7 @@
             </figure>
           </li>
           <li>
-            <figure>
+            <figure class="item-flex">
               <img
                 src="./images/img07.jpg"
                 alt="John Doe, UI Designer"
@@ -169,22 +165,19 @@
               </figcaption>
             </figure>
           </li>
-        </ul>
+        </ul></div>
       </section>
     </main>
     <footer class="footer">
-      <a class="link-logo" href="index.html"
-        >Web<span class="logo-color-other-footer">Studio</span></a
-      >
-      <address class="address-footer">
-        <p>m. Warszawa, Aleje Jerozolimskie 21</p>
-        <a class="link link-footer" href="mailto:info@devstudio.com"
-          >info@devstudio.com</a
-        >
-        <a class="link link-footer" href="tel:+380961111111"
-          >+38 096 111 11 11</a
-        >
-      </address>
+      <div class="container going-to-column block">
+       <a class="link-logo" href="index.html">Web<span class="logo-color-other-footer">Studio</span></a>
+       <address class="address-footer">
+        <div class="footer-mail-tel">
+          <div class="block"><p>m. Warszawa, Aleje Jerozolimskie 21</p></div>
+        <a class="link link-footer" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <a class="link link-footer" href="tel:+48 111 111 111">+48 111 111 111</a>
+      </address></div>
+     </div>
     </footer>
   </body>
 </html>

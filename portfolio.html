@@ -12,60 +12,58 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
   </head>
   <body>
     <header class="header-class">
-      <a class="link-logo" href="index.html"
-        >Web<span class="logo-color-other-header">Studio</span></a
-      >
-      <nav class="navigation">
-        <ul class="header">
-          <li><a class="link link-header" href="#">Agencja</a></li>
+      <div class="container header-flex">
+        <a class="link-logo" href="index.html">Web<span class="logo-color-other-header">Studio</span></a>
+        <nav class="navigation">
+          <ul class="menu">
+            <li><a class="link link-header" href="#">Agencja</a></li>
+            <li>
+              <a class="link link-header link-on-site" href="portfolio.html">Portfolio</a>
+            </li>
+            <li><a href="#" class="link link-header">Kontakt</a></li>
+          </ul>
+        </nav>
+        <ul class="mail-tel-header">
           <li>
-            <a class="link link-header link-portfolio" href="portfolio.html"
-              >Portfolio</a
-            >
+            <a class="link link-header-contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
-          <li><a href="#" class="link link-header">Kontakt</a></li>
+          <li>
+          <a class="link link-header-contact" href="tel:+48 111 111 111">+48 111 111 111</a>
+        </li>
         </ul>
-      </nav>
-      <ul class="header">
-        <li>
-          <a class="link link-header-contact" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a class="link link-header-contact" href="tel:+380961111111"
-            >+38 096 111 11 11</a
-          >
-        </li>
-      </ul>
+      </div>
     </header>
     <main class="section-white">
-      <section class="button-section">
-        <ul>
+      <section class="button-section section">
+        <div class="container portfolio-buttons-flex">
+        <ul class="pfolio-btn-flex">
           <li>
-            <button class="buttons" type="button">Wszystkie</button>
+            <button class="buttons buttons-pfolio" type="button">Wszystkie</button>
           </li>
           <li>
-            <button class="buttons" type="button">Strony</button>
+            <button class="buttons buttons-pfolio" type="button">Strony</button>
           </li>
           <li>
-            <button class="buttons" type="button">Aplikacje</button>
+            <button class="buttons buttons-pfolio" type="button">Aplikacje</button>
           </li>
           <li>
-            <button class="buttons" type="button">Dizajn</button>
+            <button class="buttons buttons-pfolio" type="button">Dizajn</button>
           </li>
           <li>
-            <button class="buttons" type="button">Marketing</button>
+            <button class="buttons buttons-pfolio" type="button">Marketing</button>
           </li>
-        </ul>
-      </section>
-      <section class="section-four">
-        <ul>
+        </ul></div>
+        <div class="container pfolio-spacing-flex">
+          <ul class="wraping-flex spacing-flex">
           <li>
-            <figure>
+            <figure class="item-flex">
               <img
                 src="./images/imgP01.jpg"
                 alt="Technocrack, Strona internetowa"
@@ -79,7 +77,7 @@
             </figure>
           </li>
           <li>
-            <figure>
+            <figure class="item-flex">
               <img
                 src="./images/imgP02.jpg"
                 alt="Grafika New Orlean vs Golden Star, Dizajn"
@@ -93,7 +91,7 @@
             </figure>
           </li>
           <li>
-            <figure>
+            <figure class="item-flex">
               <img
                 src="./images/imgP03.jpg"
                 alt="Restauracja Seafood, Aplikacja"
@@ -107,7 +105,7 @@
             </figure>
           </li>
           <li>
-            <figure>
+            <figure class="item-flex">
               <img
                 src="./images/imgP04.jpg"
                 alt="Projekt Prime, Marketing"
@@ -121,7 +119,7 @@
             </figure>
           </li>
           <li>
-            <figure>
+            <figure class="item-flex">
               <img
                 src="./images/imgP05.jpg"
                 alt="Projekt Boxes, Aplikacja"
@@ -135,7 +133,7 @@
             </figure>
           </li>
           <li>
-            <figure>
+            <figure class="item-flex">
               <img
                 src="./images/imgP06.jpg"
                 alt="Inspiration has no Borders, Strona internetowa"
@@ -149,7 +147,7 @@
             </figure>
           </li>
           <li>
-            <figure>
+            <figure class="item-flex">
               <img
                 src="./images/imgP07.jpg"
                 alt="Magazyn Limited Edition, Dizajn"
@@ -163,7 +161,7 @@
             </figure>
           </li>
           <li>
-            <figure>
+            <figure class="item-flex">
               <img
                 src="./images/imgP08.jpg"
                 alt="Projekt LAB, Marketing"
@@ -177,7 +175,7 @@
             </figure>
           </li>
           <li>
-            <figure>
+            <figure class="item-flex">
               <img
                 src="./images/imgP09.jpg"
                 alt="Inspiration has no Borders, Growing Business"
@@ -191,21 +189,20 @@
             </figure>
           </li>
         </ul>
+      </div>
       </section>
     </main>
-    <footer class="footer">
-      <a class="link-logo" href="index.html"
-        >Web<span class="logo-color-other-footer">Studio</span></a
-      >
-      <address class="address-footer">
-        <p>m. Warszawa, Aleje Jerozolimskie 21</p>
-        <a class="link link-footer" href="mailto:info@devstudio.com"
-          >info@devstudio.com</a
-        >
-        <a class="link link-footer" href="tel:+380961111111"
-          >+38 096 111 11 11</a
-        >
-      </address>
+     <footer class="footer">
+      <div class="container going-to-column block">
+       <a class="link-logo" href="index.html">Web<span class="logo-color-other-footer">Studio</span></a>
+       <address class="address-footer">
+        <div class="footer-mail-tel">
+          <div class="block"><p>m. Warszawa, Aleje Jerozolimskie 21</p></div>
+        <a class="link link-footer" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <a class="link link-footer" href="tel:+48 111 111 111">+48 111 111 111</a>
+        </address>
+        </div>
+     </div>
     </footer>
   </body>
 </html>
