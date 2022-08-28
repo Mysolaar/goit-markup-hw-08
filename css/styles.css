@@ -35,7 +35,7 @@ ul {list-style: none;}
     letter-spacing: 0.03em;
     color: var(--SelectionColor);
     text-decoration: none;
-    margin:0 auto;
+    margin:0;
 }
 
 .logo-color-other-header {
@@ -54,7 +54,9 @@ ul {list-style: none;}
     text-decoration: none;
     color: var(--FontColorFirst);
     font-weight: 500;
+    padding: 12px;
     font-size: 14px;
+    margin:0 4px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
@@ -100,7 +102,8 @@ ul {list-style: none;}
 .footer {
     background: var(--BackgroundColorSecond);
     max-height:252px;
-    padding: 60px 0 60px 0;
+    padding: 60px 0 60px 0px;
+    margin: 0 auto;
 }
 
 .address-footer {
@@ -258,7 +261,8 @@ ul {list-style: none;}
 .mail-tel-header {
     display: flex;
     flex-direction: row;
-    gap: 50px;}
+    gap: 50px;;
+}
 
 .footer-mail-tel{
     display: flex;
@@ -271,9 +275,11 @@ p {margin:0 auto}
 .header-flex { 
     display: flex;
     align-items: center;
+    justify-content: space-between;
     width: 1200px;
     height: 80px;
     margin: 0 auto;
+    padding-left: 15px;
     border-bottom: 1px solid #ECECEC;}
 
 .main-flex {
@@ -310,8 +316,11 @@ h2 {margin:0 auto;
 .block {display: block;}
 
 .address-footer {padding-top: 20px;}
-.menu {padding-left: 93px;
-padding-right: 371px;}
+
+.container-header-left {
+    display: flex;
+    align-items: center;
+}
 
 .buttons-pfolio {
     border-radius: 4px;
@@ -348,7 +357,9 @@ padding-right: 371px;}
     display: block;
     margin: 0;
 }
-
+.navigation {
+    margin-left: 77px;
+}
 .card-image.no-gap {
     display: block;
 }
