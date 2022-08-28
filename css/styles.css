@@ -264,7 +264,6 @@ ul {list-style: none;}
     display: flex;
     flex-direction: column;
     gap: 9px;
-    
 }
 p {margin:0 auto}
 
@@ -273,6 +272,8 @@ p {margin:0 auto}
     align-items: center;
     width: 1200px;
     height: 80px;
+    margin: 0 auto;
+    padding: 0;
     border-bottom: 1px solid #ECECEC;}
 
 .main-flex {
