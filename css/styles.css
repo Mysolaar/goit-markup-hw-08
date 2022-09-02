@@ -82,13 +82,8 @@ ul {list-style: none;}
 .link-on-site {
     color: var(--SelectionColor);}
 
-.link-footer {
-    color: var(--FontColorSecond);
-}
-
 .header-class {background: var(--ColorWhite);
 }
-
 
 .link-footer:focus {
     color: var(--SelectionColor);
@@ -99,9 +94,12 @@ ul {list-style: none;}
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--FontColorSecond);
+    padding: 9px 0 0 0;
+    margin:0;
 }
 
 .footer {
+    
     background: var(--BackgroundColorSecond);
     max-height:252px;
     padding: 60px 0 60px 0px;
@@ -113,6 +111,7 @@ ul {list-style: none;}
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--ColorWhite);
+    padding-top: 20px;
 }
 
 .buttons {
@@ -318,9 +317,6 @@ h2 {margin:0 auto;
     padding-bottom: 50px;
 }
 
-.block {display: block;}
-
-.address-footer {padding-top: 20px;}
 
 .container-header-left {
     display: flex;
@@ -444,3 +440,37 @@ gap:10px;
     align-items: center;
     gap: 10px;
 }
+
+.icon-sm-footer {
+    width: 44px;
+    height: 44px;
+    margin: 0;
+    border: 0px;
+    fill: white;
+    border-color: var(--SelectionColor);
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.icon-sm-footer:hover {
+    border-color: var(--SelectionColor);
+    border-radius: 50%;
+    background-color: var(--SelectionColor);
+}
+
+.footer-spacing {
+    gap:70px;
+    margin:0 auto;
+    width: 1200px;
+    padding-left: 15px;
+}
+
+.h4-footer {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+.icon-gap-footer {gap:10px;}
+
