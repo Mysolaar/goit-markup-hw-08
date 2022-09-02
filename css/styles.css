@@ -107,6 +107,9 @@ ul {list-style: none;}
 }
 
 .address-footer {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -474,3 +477,4 @@ gap:10px;
 }
 .icon-gap-footer {gap:10px;}
 
+.icon-twitter-color {background-color: var(--SelectionColor)}
