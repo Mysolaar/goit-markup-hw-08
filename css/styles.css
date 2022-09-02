@@ -71,10 +71,12 @@ ul {list-style: none;}
 
 .link-header-contact {
     color: var(--FontColorSecond);
+    fill: var(--FontColorSecond);
 }
 
-.link-header-contact:focus {
+.link-header-contact:hover {
     color: var(--SelectionColor);
+    fill: var(--SelectionColor);
 }
 
 .link-on-site {
@@ -436,4 +438,9 @@ gap:10px;
     border-radius: 50%;
     fill: white;
     background-color: var(--SelectionColor);
+}
+.link.link-header-contact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
