@@ -59,34 +59,59 @@ ul {list-style: none;}
     margin:0 4px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link:hover {
     color: var(--SelectionColor);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link:focus {
     color: var(--SelectionColor);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-header-contact {
     color: var(--FontColorSecond);
     fill: var(--FontColorSecond);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-header-contact:hover {
     color: var(--SelectionColor);
     fill: var(--SelectionColor);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-on-site {
-    color: var(--SelectionColor);}
+    color: var(--SelectionColor);
+    position: relative;
+}
+
+.link-on-site::after{
+    position: absolute;
+        display: block;
+        content: "";
+        top: 44px;
+        width: 70%;
+        height: 4px;
+        border-radius: 2px;
+        cursor: unset;
+        pointer-events: none;
+        background-color: var(--SelectionColor);
+        margin-left: 14px;
+        transform: translateY(12px);
+}
 
 .header-class {background: var(--ColorWhite);
 }
 
 .link-footer:focus {
     color: var(--SelectionColor);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-footer {
@@ -96,11 +121,12 @@ ul {list-style: none;}
     color: var(--FontColorSecond);
     padding: 9px 0 0 0;
     margin:0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer {
     
-    background: var(--BackgroundColorSecond);
+    background-color: var(--BackgroundColorSecond);
     max-height:252px;
     padding: 60px 0 60px 0px;
     margin: 0 auto;
@@ -118,28 +144,31 @@ ul {list-style: none;}
 }
 
 .buttons {
-    background: var(--ColorAlmostWhite);
+    background-color: var(--ColorAlmostWhite);
     color: var(--FontColorFirst);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .buttons:hover {
-    background: var(--SelectionColor);
+    background-color: var(--SelectionColor);
     color: var(--ColorWhite);
     cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .buttons:focus {
-    background: var(--SelectionColor);
+    background-color: var(--SelectionColor);
     color: var(--ColorWhite);
     cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .buttons-order {
-    background: var(--SelectionColor);
+    background-color: var(--SelectionColor);
     color: var(--ColorWhite);
     border-radius: 4px;
     font-weight: 700;
@@ -149,18 +178,21 @@ ul {list-style: none;}
     height: 50px;
     border: 0;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .buttons-order:hover {
-    background: var(--ColorAlmostWhite);
+    background-color: var(--ColorAlmostWhite);
     color: var(--FontColorFirst);
     cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .buttons-order:focus {
-    background: var(--ColorAlmostWhite);
+    background-color: var(--ColorAlmostWhite);
     color: var(--FontColorFirst);
     cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .title-main {
@@ -275,7 +307,6 @@ ul {list-style: none;}
     display: flex;
     flex-direction: column;
     gap: 9px;
-    
 }
 p {margin:0 auto}
 
@@ -329,10 +360,13 @@ h2 {margin:0 auto;
 .buttons-pfolio {
     border-radius: 4px;
     border: 0;
-    padding: 6px 22px 6px 22px;}
+    padding: 6px 22px 6px 22px;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .buttons-pfolio:hover {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-buttons-flex {
@@ -340,7 +374,8 @@ h2 {margin:0 auto;
     justify-content: center;
     }
 
-.pfolio-btn-flex {display: flex;
+.pfolio-btn-flex {
+    display: flex;
     justify-content: center;
     gap:8px; }
 
@@ -358,10 +393,12 @@ h2 {margin:0 auto;
 .pfolio-item-flex {
     background-color: var(--white);
     margin: 0;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .pfolio-item-flex:hover{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .figcaption-border {
@@ -401,9 +438,11 @@ h2 {margin:0 auto;
     margin: 0 auto;
     border: 0;
     background-color: var(--ColorAlmostWhite);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-lorem:hover {
     fill: var(--SelectionColor);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-clients {
@@ -413,18 +452,23 @@ h2 {margin:0 auto;
     margin: 0 auto;
     border: 1px solid #AFB1B8;
     fill: #AFB1B8;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-clients:hover {
     fill: var(--SelectionColor);
     border-color: var(--SelectionColor);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.team-icon-flex {display: flex;
-justify-content: center;
-margin:0 auto;
-padding-top: 0;
-padding-bottom: 30px;
-gap:10px;
+.team-icon-flex {
+    display: flex;
+    justify-content: center;
+    margin:0 auto;
+    padding-top: 0;
+    padding-bottom: 30px;
+    gap:10px;
 }
 
 .icon-sm-team {
@@ -433,14 +477,17 @@ gap:10px;
     margin: 0;
     border: 0px ;
     fill: #AFB1B8;
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-sm-team:hover {
-    fill: var(--SelectionColor);
     border-color: var(--SelectionColor);
     border-radius: 50%;
     fill: white;
     background-color: var(--SelectionColor);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link.link-header-contact {
     display: flex;
@@ -457,12 +504,12 @@ gap:10px;
     border-color: var(--SelectionColor);
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-sm-footer:hover {
-    border-color: var(--SelectionColor);
-    border-radius: 50%;
     background-color: var(--SelectionColor);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-spacing {
