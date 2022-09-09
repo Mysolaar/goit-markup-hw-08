@@ -565,3 +565,103 @@ h2 {margin:0 auto;
     transform: translateX(0);
 }
 
+.what-we-do-box{
+    position: relative;
+}
+
+.what-we-do-box-overlay {
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    color: var(--ColorWhite);
+    padding: 27px 0;
+    width: 100%;
+    background-color: rgba(47, 48, 58, 0.8);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    line-height: 1.143;
+    text-transform: uppercase;
+}
+
+/* ----Modal--- */
+
+.modal {
+    position: absolute;
+    width: 528px;
+    height: 581px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--ColorWhite);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    /* margin-top: 221px;
+    margin-bottom: 222px; */
+}
+
+.is-hidden {
+    overflow: hidden;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 250ms ease-in-out;
+}
+
+.modal-background {
+    position: absolute;
+    width: 100%;
+    height: 1024px;
+    left: 0px;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modal-button {
+    top: 8px;
+    right: 8px;
+    position: absolute;
+    border-style: none;
+}
+
+.svg-modal-button {
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+    width: 30px;
+    position: absolute;
+    height: 30px;
+    background-color: var(--ColorWhite);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    fill: black;
+    transition-property: background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-button:hover svg,
+.modal-button:focus svg {
+    cursor: pointer;
+    background-color: var(--SelectionColor);
+    fill: var(--ColorWhite);
+}
+
+.anime {
+    animation-name: spin;
+    animation-duration: 1000ms;
+    animation-timing-function: linear;
+    animation-delay: 1000ms;
+    animation-iteration-count: 2;
+    animation-direction:alternate-reverse;
+}
+
+@keyframes spin {
+    0% {
+        rotate: 0deg;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}

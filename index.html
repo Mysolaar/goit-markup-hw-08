@@ -37,7 +37,7 @@
       <section class="section-darkgrey section">
         <div class="container going-to-column main-flex">
           <h1 class="title-main">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-          <button class="buttons buttons-order" type="button">Zamów usługę</button>
+          <button class="buttons buttons-order" type="button" data-modal-open>Zamów usługę</button>
         </div>
       </section>
       <section class="section">
@@ -90,29 +90,32 @@
         <h2 class="title-second">Czym się zajmujemy</h2>
         <figure>
           <ul class="spacing-flex">
-            <li>
+            <li class="what-we-do-box">
               <img
                 src="./images/img01.jpg"
                 alt="rece piszace na klawiaturze"
                 width="370"
                 height="294"
               />
+              <p class="what-we-do-box-overlay">Aplikacje komputerowe</p>
             </li>
-            <li>
+            <li class="what-we-do-box">
               <img
                 src="./images/img02.jpg"
                 alt="telefon dotykowy trzymany w jednej rece, druga dlon lezy na klawiaturze laptopa"
                 width="370"
                 height="294"
               />
+              <p class="what-we-do-box-overlay">Aplikacje mobilne</p>
             </li>
-            <li>
+            <li class="what-we-do-box">
               <img
                 src="./images/img03.jpg"
                 alt="rece trzymajace tablet i dlugopis, w tle blat biurka z komputerem stacjonarnym"
                 width="370"
                 height="294"
               />
+              <p class="what-we-do-box-overlay">Rozwiązania graficzne</p>
             </li>
           </ul>
         </figure></div>
@@ -310,5 +313,22 @@
      </div>
     </div>
     </footer>
+
+    <div class="modal-background is-hidden" data-modal>
+      <div class="modal anime">
+        <button class="modal-button" data-modal-close>
+          <svg class="svg-modal-button">
+            <use
+              href="./images/icons.svg#icon-eX"
+              width="12"
+              height="12"
+              x="8"
+              y="8"
+            ></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
