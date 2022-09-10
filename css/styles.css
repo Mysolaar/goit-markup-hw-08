@@ -611,7 +611,7 @@ h2 {margin:0 auto;
 .modal-background {
     position: fixed;
     width: 100%;
-    height: 1024px;
+    height: 100vh;
     left: 0px;
     top: 0px;
     background-color: rgba(0, 0, 0, 0.2);
