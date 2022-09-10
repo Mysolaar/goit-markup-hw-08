@@ -96,6 +96,7 @@ ul {list-style: none;}
         display: block;
         content: "";
         top: 44px;
+        left:0;
         width: 70%;
         height: 4px;
         border-radius: 2px;
@@ -588,7 +589,7 @@ h2 {margin:0 auto;
 /* ----Modal--- */
 
 .modal {
-    position: absolute;
+    position: fixed;
     width: 528px;
     height: 581px;
     left: 50%;
@@ -598,8 +599,6 @@ h2 {margin:0 auto;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    /* margin-top: 221px;
-    margin-bottom: 222px; */
 }
 
 .is-hidden {
@@ -610,7 +609,7 @@ h2 {margin:0 auto;
 }
 
 .modal-background {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 1024px;
     left: 0px;
