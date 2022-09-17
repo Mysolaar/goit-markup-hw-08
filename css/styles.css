@@ -586,6 +586,73 @@ h2 {margin:0 auto;
     text-transform: uppercase;
 }
 
+/* Footer send mail */
+
+
+.form-newsletter {
+    display: flex;
+    gap:12px;
+}
+.btn-submit {
+    width: 200px;
+    height: 50px;
+    background-color: var(--SelectionColor);
+    border: 0;
+        border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    color:var(--ColorWhite);
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 30px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+    fill:var(--ColorWhite);
+    cursor: pointer;
+    justify-content:center;
+    align-items: center;
+}
+.input-newsletter::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    padding-left: 16px;
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.03em;
+        border-color: rgba(255, 255, 255, 0.3);
+}
+.input-newsletter:placeholder-shown {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.input-newsletter:not(:placeholder-shown) {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.input-newsletter:hover,
+.input-newsletter:focus {
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.input-newsletter{
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    width: 358px;
+    height: 50px;
+    background-color: #2F303A;
+    margin:0;
+    padding: 16px;
+    color: rgba(255, 255, 255, 0.6);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+.icon-btn-newsletter{
+    margin-left: 24px;
+}
 /* ----Modal--- */
 
 .modal {
