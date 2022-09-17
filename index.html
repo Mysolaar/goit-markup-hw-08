@@ -336,53 +336,41 @@
             ></use>
           </svg>
         </button>
-        <div>
-          Zostaw swoje dane w formularzu poniżej
-        </div>
-<form name="contact" autocomplete="on" class="form-modal">
-          <label for="user-name" class="label-modal">Imię</label>
-        <div class="form-highlight-field">
-          <input type="text" name="name" class="input-modal" id="user-name" />
-            <svg width="12" height="12" class="input-modal-icon icon-1">
-              <use xlink:href="./images/icons.svg#icon-person-black"></use>
-            </svg>
-          </div>
-          <label for="user-phone" class="label-modal">Telefon</label>
-          <div class="form-highlight-field">
-            <input type="tel" name="phone" class="input-modal" id="user-phone" />
-            <svg width="13" height="13" class="input-modal-icon icon-2">
-              <use xlink:href="./images/icons.svg#icon-phone-black"></use>
-            </svg>
-          </div>
-          <label for="user-mail" class="label-modal">Email</label>
-          <div class="form-highlight-field">
-            <input type="email" name="mail" class="input-modal" id="user-mail" />
-            <svg width="15" height="12" class="input-modal-icon icon-3">
-              <use xlink:href="./images/icons.svg#icon-email-black"></use>
-            </svg>
-          </div>
-          <label for="user-comment" class="label-modal">Komentarz</label>
-          <div class="form-highlight-field">
-            <textarea
-              name="comment"
-              id="user-comment"
-              placeholder="Wprowadź tekst"
-              class="input-modal-text"></textarea>
-          </div>
-          <div class="user-agreements">
-            <input
-              type="checkbox"
-              required
-              name="agreement"
-              class="box-custom box-hidden"
-              id="user-agreement" />
-            <p class="agreement-text">
-              Oświadczam, iż akceptuję <a href="#" class="agreement-link">Regulamin</a> i
-              <a href="#" class="agreement-link">Politykę Prywatności</a>.
-            </p>
-          </div>
-          <button type="submit" class="button-modal-send">Wyślij</button>
-        </form>
+        <form class="form" name="order form" method="POST">
+        <h2 class="form-title">Zostaw swoje dane w formularzu poniżej</h2>
+        <div class="input-box">
+        <label class="order-modal-lab" for="name">Imię
+          <input class="svg-name back-svg" type="text" name="name" id="name" required/>
+          <svg class="order-icon">
+            <use href="./images/icons.svg#icon-form-name">
+            </use>
+          </svg>
+        </label>
+        <label class="order-modal-lab" for="phone">Telefon
+          <input class="svg-tel back-svg" type="tel" name="phone" id="phone" required/>
+          <svg class="order-icon">
+            <use href="./images/icons.svg#icon-form-tel">
+            </use>
+          </svg>
+        </label>
+        <label class="order-modal-lab" for="user_mail">E-mail
+          <input class="svg-mail back-svg" type="email" name="mail" id="user_mail" required/>
+          <svg class="order-icon">
+            <use href="./images/icons.svg#icon-form-mail">
+            </use>
+          </svg>
+        </label>
+        <label class="order-modal-lab">Komentarz
+        <textarea class="order-modal-comm" name="consent" placeholder="Wprowadź tekst" rows="6"></textarea>
+        </label>
+        <label class="checkbox">
+		  <input class="check-lex visually-hidden" type="checkbox" name="checkbox"/>
+		  <span class ="checked-p">Oświadczam, iż akceptuję <a href="#rules" class="check-links">Regulamin</a>
+            i  <a href="#privacypolicy" class="check-links">Politykę Prywatności</a>.</span> 
+          </label>
+        <button class="order-submit-button" type="submit"><span class="sent-but">Wyślij</span></button>
+      </div>
+      </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
