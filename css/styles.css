@@ -745,7 +745,7 @@ h2 {margin:0 auto;
 }
 
 
-.form-title {
+.form__title {
     font-weight: 700;
     font-size: 20px;
     line-height: 1.2;
@@ -757,7 +757,7 @@ h2 {margin:0 auto;
     padding: 0;
 }
 
-.input-box {
+.form__input-box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -765,7 +765,7 @@ h2 {margin:0 auto;
     margin-top:0;
 }
 
-.order-modal-lab {
+.form__label {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -784,7 +784,7 @@ input {
     font-family: inherit;
 }
 
-.order-icon {
+.form__icon {
     position: absolute;
     display: flex;
     width: 15px;
@@ -794,43 +794,43 @@ input {
     fill: var(--FontColorFirst);
 }
 
-.order-icon:hover,
-.order-icon:focus {
+.form__icon:hover,
+.form__icon:focus {
     fill: var(--SelectionColor);
     transition: var(--transition);
 }
 
-.svg-name {
+.form__svg-name {
     width: 12px;
     height: 12px;
 }
 
-.svg-tel {
+.form__svg-tel {
     width: 13px;
     height: 13px;
 }
 
-.svg-mail {
+.form__svg-mail {
     width: 15px;
     height: 12px;
 }
 
-.order-modal-lab:focus-within,
-.order-modal-comm:focus-within {
+.form__label:focus-within,
+.form__comment:focus-within {
     fill: var(--SelectionColor);
     transition: var(--transition);
 }
 
-.order-modal-lab:focus-within .svg-name,
-.order-modal-lab:focus-within .svg-tel,
-.order-modal-lab:focus-within .svg-mail,
-.order-modal-lab:focus-within .order-icon {
+.form__label:focus-within .form__svg-name,
+.form__label:focus-within .form__svg-tel,
+.form__label:focus-within .form__svg-mail,
+.form__label:focus-within .form__icon {
     fill: var(--SelectionColor);
     color: var(--SelectionColor);
     transition: var(--transition);
 }
 
-.back-svg {
+.form__svg {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     width: 448px;
@@ -845,7 +845,7 @@ input {
     transition: background-image var(--transition);
 }
 
-.order-modal-comm {
+.form__comment {
     width: 448px;
     height: 120px;
     font-size: 12px;
@@ -859,24 +859,24 @@ input {
     border-radius: 4px;
 }
 
-.back-svg:hover,
-.order-modal-comm:hover,
-.back-svg:focus,
-.order-modal-comm:focus {
+.form__svg:hover,
+.form__comment:hover,
+.form__svg:focus,
+.form__comment:focus {
     border: 1px solid var(--SelectionColor);
     border-radius: 4px;
     outline: none;
     transition: var(--transition);
 }
 
-.checkbox {
+.form__checkbox {
     display: flex;
     align-items: center;
     margin-top: 20px;
     cursor: pointer;
 }
 
-.checked-p {
+.form__icon-checked {
     display: flex;
     align-items: center;
     margin-top: 1px;
@@ -888,7 +888,7 @@ input {
     transition: var(--transition);
 }
 
-.checked-p::before {
+.form__icon-checked::before {
     display: inline-block;
     content: "";
     width: 16px;
@@ -899,7 +899,7 @@ input {
     transition: var(--transition);
 }
 
-.check-links {
+.form__links-check {
     padding-left: 3px;
     padding-right: 3px;
     text-decoration: none;
@@ -909,14 +909,14 @@ input {
     letter-spacing: 0.06em;
 }
 
-.check-links:hover {
+.form__links-check:hover {
     cursor: pointer;
     text-decoration: underline;
     color: var(--SelectionColor);
     transition: var(--transition);
 }
 
-.check-lex:checked+.checked-p::before {
+.form__icon-checkbox:checked+.form__icon-checked::before {
     background-color: var(--SelectionColor);
     outline: 1px solid var(--SelectionColor);
     border-radius: 2px;
@@ -928,7 +928,7 @@ input {
     transition: var(--transition);
 }
 
-.order-submit-button {
+.form__btn {
     background: var(--SelectionColor);
     box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
     border-radius: 4px;
@@ -941,7 +941,7 @@ input {
     transition: var(--transition);
 }
 
-.sent-but {
+.form__btn-send {
     padding: 10px 76px;
     letter-spacing: 0.06em;
     line-height: 1.88;
@@ -953,14 +953,14 @@ input {
     font-size: 16px;
 }
 
-.order-submit-button:hover,
-.order-submit-button:focus {
+.form__btn:hover,
+.form__btn:focus {
     background-color: var(--ColorWhite);
     color: var(--FontColorFirst);
     transition: var(--transition);
 }
 
-.visually-hidden {
+.form__icon-checkbox--hidden {
     position: absolute !important;
     clip: rect(1px, 1px, 1px, 1px);
     padding: 0 !important;
@@ -970,7 +970,7 @@ input {
     overflow: hidden;
 }
 
-.order-modal-comm::placeholder {
+.form__comment::placeholder {
     font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
