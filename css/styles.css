@@ -297,7 +297,6 @@ ul {list-style: none;}
     gap: 50px;;
 }
 
-
 p {margin:0 auto}
 
 .header__flex { 
@@ -347,7 +346,7 @@ h2 {margin:0 auto;
     align-items: center;
 }
 
-.buttons-pfolio {
+.pfolio-btn__buttons {
     background-color: var(--ColorAlmostWhite);
         color: var(--FontColorFirst);
         font-weight: 500;
@@ -361,7 +360,7 @@ h2 {margin:0 auto;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.buttons-pfolio:hover {
+.pfolio-btn__buttons:hover {
     background-color: var(--SelectionColor);
         color: var(--ColorWhite);
         cursor: pointer;
@@ -375,7 +374,7 @@ h2 {margin:0 auto;
     justify-content: center;
     }
 
-.pfolio-btn-flex {
+.pfolio-btn {
     display: flex;
     justify-content: center;
     gap:8px; }
@@ -386,23 +385,31 @@ h2 {margin:0 auto;
     gap:30px;
     margin: 0 auto;}
 
+.spacing-flex {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin: 0 auto;
+}
+
 .pfolio-spacing-flex {
     margin: 0 auto;
     padding-top: 50px; 
 }
 
-.pfolio-item-flex {
+.pfolio-item {
     background-color: var(--white);
     margin: 0;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.pfolio-item-flex:hover{
+.pfolio-item:hover{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.figcaption-border {
+.pfolio-item__border {
     border: 1px solid #EEEEEE;
     display: block;
     margin: 0;
@@ -413,10 +420,10 @@ h2 {margin:0 auto;
 .navigation {
     margin-left: 77px;
 }
-.card-image.no-gap {
+.pfolio-item__image {
     display: block;
 }
-.pfolio-image-name {
+.pfolio-item__name {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -425,7 +432,7 @@ h2 {margin:0 auto;
     padding: 20px 24px 0 24px;
     color: #212121
 }
-.pfolio-image-designation {
+.pfolio-item__designation {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
@@ -532,13 +539,13 @@ h2 {margin:0 auto;
 }
 .footer__icon-gap {gap:10px;}
 
-.box {
+.pfolio-item__box {
     position: relative;
     overflow: hidden;
     transition-property: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.box-overlay {
+.pfolio-item__box--overlay {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -555,14 +562,14 @@ h2 {margin:0 auto;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.box:hover,
-.box:focus {
+.pfolio-item__box:hover,
+.pfolio-item__box:focus {
     cursor: pointer;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.box:hover .box-overlay {
+.pfolio-item__box:hover .pfolio-item__box--overlay {
     transform: translateX(0);
 }
 
