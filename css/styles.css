@@ -302,12 +302,6 @@ ul {list-style: none;}
 
 .section {
     padding: 94px 0 94px 0;
-
-}
-.menu {
-    display: flex;
-    flex-direction: row ;
-    gap:46px;
 }
 
 .going-to-row {
