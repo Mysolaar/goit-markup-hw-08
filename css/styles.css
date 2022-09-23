@@ -154,30 +154,6 @@ ul {list-style: none;}
 }
 
 .buttons {
-    background-color: var(--ColorAlmostWhite);
-    color: var(--FontColorFirst);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    text-align: center;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.buttons:hover {
-    background-color: var(--SelectionColor);
-    color: var(--ColorWhite);
-    cursor: pointer;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.buttons:focus {
-    background-color: var(--SelectionColor);
-    color: var(--ColorWhite);
-    cursor: pointer;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.buttons-order {
     background-color: var(--SelectionColor);
     color: var(--ColorWhite);
     border-radius: 4px;
@@ -191,21 +167,21 @@ ul {list-style: none;}
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.buttons-order:hover {
+.buttons:hover {
     background-color: var(--ColorAlmostWhite);
     color: var(--FontColorFirst);
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.buttons-order:focus {
+.buttons:focus {
     background-color: var(--ColorAlmostWhite);
     color: var(--FontColorFirst);
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.title-main {
+.section__main-title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -225,7 +201,7 @@ ul {list-style: none;}
     letter-spacing: 0.03em;
 }
 
-.title-third {
+.list__title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -234,7 +210,7 @@ ul {list-style: none;}
     color: var(--FontColorFirst);
 }
 
-.p-text {
+.list__text {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -263,15 +239,15 @@ ul {list-style: none;}
     padding-bottom: 16px;
 }
 
-.section-lightgray {
+.section--lightgray {
     background: var(--ColorAlmostWhite);
 }
 
-.section-white {
+.main--white {
     background: var(--ColorWhite);
 }
 
-.section-darkgrey {
+.section--darkgrey {
     background-image:linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url("../images/backgroundimg01.jpg");
     background-size: cover;
@@ -321,11 +297,7 @@ ul {list-style: none;}
     gap: 50px;;
 }
 
-.footer-mail-tel{
-    display: flex;
-    flex-direction: column;
-    gap: 9px;
-}
+
 p {margin:0 auto}
 
 .header__flex { 
@@ -338,7 +310,7 @@ p {margin:0 auto}
     padding-left: 15px;
     border-bottom: 1px solid #ECECEC;}
 
-.main-flex {
+.section__flex {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -347,22 +319,13 @@ p {margin:0 auto}
     padding: 0;
 }
 
-.spacing-flex {
+.section__spacing-flex {
    display: flex;
     justify-content: center;
     gap: 30px;
     padding: 0;
     margin: 0 auto;
 }
-
-.clients__spacing-flex {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    padding: 0;
-    margin: 0 auto;
-}
-
 
 .item-flex {
     background-color: #FFFFFF;
@@ -461,7 +424,7 @@ h2 {margin:0 auto;
     padding: 4px 24px 20px 24px;
 }
 
-.icon-lorem {
+.list__icon {
     width: 270px;
     height: 120px;
     border-radius: 4px;
@@ -470,7 +433,7 @@ h2 {margin:0 auto;
     background-color: var(--ColorAlmostWhite);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icon-lorem:hover {
+.list__icon:hover {
     fill: var(--SelectionColor);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
