@@ -1,0 +1,11 @@
+$font: (
+    'first':"Roboto",
+    'secondary': "Raleway",
+    'backupFont': 'Verdana',
+    'lastFont': 'Tahoma',
+    'FontType': sans-serif,
+);
+
+@function getFont($key) {
+    @return map-get($font, $key);
+}

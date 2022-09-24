@@ -1,17 +1,3 @@
-
-:root {
-    --BackgroundColorFirst: #e5e5e5;
-    --BackgroundColorSecond: #2f303a;
-    --FontColorFirst: #212121;
-    --FontColorSecond: #757575;
-    --SelectionColor: #2196f3;
-    --ColorWhite: #ffffff;
-    --ColorWhiteTransp: #ffffff99;
-    --ColorAlmostWhite: #f5f4fa;
-    --ColorLightGray: #AFB1B8;
-    --transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 *,
 *::before,
 *::after {
@@ -21,10 +7,9 @@
 body {
     background-color: getColor('BackgroundColorFirst');
     color: getColor('FontColorFirst');
-    font-family: "Roboto", "Raleway", 'Verdana',
-        'Tahoma', sans-serif;
-    margin: 0 auto;
-    padding: 0;
+    font-family: getFont('first'), getFont('secondary'), getFont('backupFont'),
+        getFont('lastFont'), getFont('FontType');
+    @include margin-pading-null;
 }
 
 ul {
@@ -55,9 +40,8 @@ p {
     }
 
     &__container {
-        width: 1200px;
-        margin: 0 auto;
-        padding: 0;
+        width: $boxWidth;
+        @include margin-pading-null;
         display: flex;
     }
 
@@ -85,32 +69,27 @@ p {
         align-items: center;
         justify-content: center;
         height: 412px;
-        margin: 0 auto;
-        padding: 0;
+        @include margin-pading-null;
         }
     
     &__spacing {
         display: flex;
         justify-content: center;
         gap: 30px;
-        padding: 0;
-        margin: 0 auto;
+        @include margin-pading-null;
         }
 }
 
 .going-to-row {
-    display: flex;
-    flex-direction: row;
+    @include flexRow;
 }
 
 .going-to-column {
-    display: flex;
-    flex-direction: column;
+    @include flexColumn;
 }
 
 .figure-flex {
-    display: flex;
-    flex-direction: row;
+    @include flexRow;
 }
 
 .wraping-flex {
@@ -124,6 +103,5 @@ p {
     display: flex;
     justify-content: center;
     gap: 30px;
-    padding: 0;
-    margin: 0 auto;
+    @include margin-pading-null;
 }

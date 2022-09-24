@@ -44,7 +44,7 @@
     background-color: getColor('ColorWhite');
     border: 1px solid getColor('BlackTranspLess');
     fill: getColor('ColorBlack');
-    transition: var(--transition);
+    transition: $transition;
 }
 
 .modal__btn:hover .modal__icon,
@@ -126,7 +126,7 @@ input {
 .form__icon:hover,
 .form__icon:focus {
     fill: getColor('SelectionColor');
-    transition: var(--transition);
+    transition: $transition;
 }
 
 .form__svg-name {
@@ -147,7 +147,7 @@ input {
 .form__label:focus-within,
 .form__comment:focus-within {
     fill: getColor('SelectionColor');
-    transition: var(--transition);
+    transition: $transition;
 }
 
 .form__label:focus-within .form__svg-name,
@@ -156,7 +156,7 @@ input {
 .form__label:focus-within .form__icon {
     fill: getColor('SelectionColor');
     color: getColor('SelectionColor');
-    transition: var(--transition);
+    transition: $transition;
 }
 
 .form__svg {
@@ -171,7 +171,7 @@ input {
     display: block;
     background-repeat: no-repeat;
     background-position: left 15px center;
-    transition: background-image var(--transition);
+    transition: background-image $transition;
 }
 
 .form__comment {
@@ -195,7 +195,7 @@ input {
     border: 1px solid getColor('SelectionColor');
     border-radius: 4px;
     outline: none;
-    transition: var(--transition);
+    transition: $transition;
 }
 
 .form__checkbox {
@@ -214,7 +214,7 @@ input {
     letter-spacing: 0.03em;
     color: getColor('FontColorSecond');
     margin-left: 8px;
-    transition: var(--transition);
+    transition: $transition;
 }
 
 .form__icon-checked::before {
@@ -225,7 +225,7 @@ input {
     outline: 1px solid getColor('FontColorFirst');
     border-radius: 2px;
     margin-right: 9px;
-    transition: var(--transition);
+    transition: $transition;
 }
 
 .form__links-check {
@@ -233,7 +233,7 @@ input {
     padding-right: 3px;
     text-decoration: none;
     color: getColor('SelectionColor');
-    transition: var(--transition);
+    transition: $transition;
     transition-property: text-decoration, color;
     letter-spacing: 0.06em;
 }
@@ -242,7 +242,7 @@ input {
     cursor: pointer;
     text-decoration: underline;
     color: getColor('SelectionColor');
-    transition: var(--transition);
+    transition: $transition;
 }
 
 .form__icon-checkbox:checked+.form__icon-checked::before {
@@ -254,7 +254,7 @@ input {
     background-size: cover;
     background-position: center;
     margin-right: 8px;
-    transition: var(--transition);
+    transition: $transition;
 }
 
 .form__btn {
@@ -267,7 +267,7 @@ input {
     margin-top: 30px;
     border: 0px;
     cursor: pointer;
-    transition: var(--transition);
+    transition: $transition;
 }
 
 .form__btn-send {
@@ -286,7 +286,7 @@ input {
 .form__btn:focus {
     background-color: getColor('ColorWhite');
     color: getColor('FontColorFirst');
-    transition: var(--transition);
+    transition: $transition;
 }
 
 .form__icon-checkbox--hidden {
@@ -300,7 +300,7 @@ input {
 }
 
 .form__comment::placeholder {
-    font-family: 'Roboto';
+    font-family: getFont('first');
     font-style: normal;
     font-weight: 400;
     font-size: 12px;

@@ -6,14 +6,13 @@
     margin: 0 auto;
 
     &__container {
-        width: 1200px;
-        margin: 0 auto;
-        padding: 0;
+        width: $boxWidth;
+        @include margin-pading-null;
         display: flex;
     }
 
     &__logo-link {
-        font-family: "Raleway";
+        font-family: getFont('secondary');
         font-style: normal;
         font-weight: 700;
         font-size: 26px;
@@ -35,16 +34,16 @@
         color: getColor('FontColorSecond');
         padding: 9px 0 0 0;
         margin: 0;
-        transition: var(--transition);
+        transition: $transition;
 
         &:focus {
             color: getColor('SelectionColor');
-            transition: var(--transition);
+            transition: $transition;
         }
     }
 
     &__address {
-        font-family: 'Roboto';
+        font-family: getFont('first');
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -63,19 +62,19 @@
         border-color: getColor('SelectionColor');
         border-radius: 50%;
         background: getColor('ColorBlackTransp');
-        transition: var(--transition);
+        transition: $transition;
 
 
         &:hover {
             background-color: getColor('SelectionColor');
-            transition: var(--transition);
+            transition: $transition;
         }
     }
 
     &__spacing {
         gap: 70px;
         margin: 0 auto;
-        width: 1200px;
+        width: $boxWidth;
         padding-left: 15px;
     }
 
@@ -104,7 +103,7 @@
         border-radius: 4px;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         color: getColor('ColorWhite');
-        font-family: 'Roboto';
+        font-family: getFont('first');
         font-style: normal;
         font-weight: 700;
         font-size: 16px;
@@ -122,7 +121,7 @@
             background-color: getColor('ColorAlmostWhite');
             color: getColor('FontColorFirst');
             cursor: pointer;
-            transition: var(--transition);
+            transition: $transition;
             fill: getColor('FontColorFirst');
         }
     }
@@ -142,7 +141,7 @@
         &::placeholder {
             color: getColor('ColorWhiteTransp');
             padding-left: 15px;
-            font-family: 'Roboto';
+            font-family: getFont('first');
             font-style: normal;
             font-weight: 400;
             font-size: 16px;

@@ -2,32 +2,31 @@
     background: getColor('ColorWhite');
 
     &__container {
-        width: 1200px;
-        margin: 0 auto;
-        padding: 0;
+        width: $boxWidth;
+        @include margin-pading-null;
         display: flex;
     }
 
     &__link {
         color: getColor('FontColorSecond');
         fill: getColor('FontColorSecond');
-        transition: var(--transition);
+        transition: $transition;
 
         &:hover {
             color: getColor('SelectionColor');
             fill: getColor('SelectionColor');
-            transition: var(--transition);
+            transition: $transition;
         }
     }
 
     &__link-logo {
-            font-family: "Raleway";
+            font-family: getFont('secondary');
             font-style: normal;
             font-weight: 700;
             font-size: 26px;
             line-height: 1.19;
             letter-spacing: 0.03em;
-            color: var(--SelectionColor);
+            color: getColor('SelectionColor');
             text-decoration: none;
             margin: 0;
     
@@ -37,8 +36,7 @@
         }
 
     &__contact {
-        display: flex;
-        flex-direction: row;
+        @include flexRow;
         gap: 50px;
         ;
     }
@@ -47,7 +45,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 1200px;
+        width: $boxWidth;
         height: 80px;
         margin: 0 auto;
         padding-left: 15px;

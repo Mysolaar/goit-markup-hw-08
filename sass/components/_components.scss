@@ -7,16 +7,16 @@
     margin: 0 4px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    transition: var(--transition);
+    transition: $transition;
 
     &:hover {
         color: getColor('SelectionColor');
-        transition: var(--transition);
+        transition: $transition;
     }
 
     &:focus {
         color: getColor('SelectionColor');
-        transition: var(--transition);
+        transition: $transition;
     }
 
     &--active {
@@ -52,19 +52,19 @@
     height: 50px;
     border: 0;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    transition: var(--transition);
+    transition: $transition;
 
     &:hover {
         background-color: getColor('ColorAlmostWhite');
         color: getColor('FontColorFirst');
         cursor: pointer;
-        transition: var(--transition);
+        transition: $transition;
     }
 
     &:focus {
         background-color: getColor('ColorAlmostWhite');
         color: var(--FontColorFirst);
         cursor: pointer;
-        transition: var(--transition);
+        transition: $transition;
     }
 }
