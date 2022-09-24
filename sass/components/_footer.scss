@@ -1,0 +1,172 @@
+.footer {
+
+    background-color: var(--BackgroundColorSecond);
+    max-height: 252px;
+    padding: 60px 0 60px 0px;
+    margin: 0 auto;
+
+    &__container {
+        width: 1200px;
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+    }
+
+    &__logo-link {
+        font-family: "Raleway";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+        color: var(--SelectionColor);
+        text-decoration: none;
+        margin: 0;
+
+        &--color-other {
+            color: var(--ColorWhite);
+        }
+    }
+
+    &__link {
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: var(--FontColorSecond);
+        padding: 9px 0 0 0;
+        margin: 0;
+        transition: var(--transition);
+
+        &:focus {
+            color: var(--SelectionColor);
+            transition: var(--transition);
+        }
+    }
+
+    &__address {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: var(--ColorWhite);
+        padding-top: 20px;
+    }
+
+    &__icon-sm {
+        width: 44px;
+        height: 44px;
+        margin: 0;
+        border: 0px;
+        fill: white;
+        border-color: var(--SelectionColor);
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.1);
+        transition: var(--transition);
+
+
+        &:hover {
+            background-color: var(--SelectionColor);
+            transition: var(--transition);
+        }
+    }
+
+    &__spacing {
+        gap: 70px;
+        margin: 0 auto;
+        width: 1200px;
+        padding-left: 15px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+    }
+
+    &__icon-gap {
+        gap: 10px;
+    }
+
+    &__form {
+        display: flex;
+        gap: 12px;
+    }
+
+    &__btn-submit {
+        width: 200px;
+        height: 50px;
+        background-color: var(--SelectionColor);
+        border: 0;
+        border-radius: 4px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        color: var(--ColorWhite);
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 30px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        fill: var(--ColorWhite);
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+
+        &:hover,
+        &:focus {
+            background-color: var(--ColorAlmostWhite);
+            color: var(--FontColorFirst);
+            cursor: pointer;
+            transition: var(--transition);
+            fill: var(--FontColorFirst);
+        }
+    }
+
+    &__newsletter-input {
+        box-sizing: border-box;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 4px;
+        width: 358px;
+        height: 50px;
+        background-color: #2F303A;
+        margin: 0;
+        padding: 16px;
+        color: rgba(255, 255, 255, 0.6);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+        &::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+            padding-left: 15px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 0.03em;
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        &:placeholder-shown {
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        &:not(:placeholder-shown) {
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    }
+
+    &__btn-icon {
+        margin-left: 24px;
+    }
+}

@@ -1,0 +1,129 @@
+
+:root {
+    --BackgroundColorFirst: #e5e5e5;
+    --BackgroundColorSecond: #2f303a;
+    --FontColorFirst: #212121;
+    --FontColorSecond: #757575;
+    --SelectionColor: #2196f3;
+    --ColorWhite: #ffffff;
+    --ColorWhiteTransp: #ffffff99;
+    --ColorAlmostWhite: #f5f4fa;
+    --ColorLightGray: #AFB1B8;
+    --transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--BackgroundColorFirst);
+    color: var(--FontColorFirst);
+    font-family: "Roboto", "Raleway", 'Verdana',
+        'Tahoma', sans-serif;
+    margin: 0 auto;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    margin: 0 auto
+}
+
+.main--white {
+    background: var(--ColorWhite);
+}
+
+.section {
+    padding: 94px 0 94px 0;
+
+    &--lightgray {
+        background: var(--ColorAlmostWhite);
+    }
+
+    &--darkgrey {
+        background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url("../images/backgroundimg01.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    &__container {
+        width: 1200px;
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+    }
+
+    &__main-title {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        letter-spacing: 0.06em;
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--ColorWhite);
+        width: 696px;
+        height: 120px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        text-align: center;
+        letter-spacing: 0.03em;
+    }
+    &__flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 412px;
+        margin: 0 auto;
+        padding: 0;
+        }
+    
+    &__spacing {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding: 0;
+        margin: 0 auto;
+        }
+}
+
+.going-to-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.going-to-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.figure-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.wraping-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 0 auto;
+}
+
+.spacing-flex {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin: 0 auto;
+}

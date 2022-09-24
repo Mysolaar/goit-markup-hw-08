@@ -1,0 +1,14 @@
+$colors: (
+        'background-color-first': #e5e5e5,
+        'background-color-second': #2f303a,
+        'font-color-first': #212121,
+        'font-color-second': #757575,
+        'selection-color': #2196f3,
+        'color-white': #ffffff,
+        'color-white-transp': #ffffff99,
+        'color-almost-white': #f5f4fa,
+);
+
+@function getColor($key) {
+    @return map-get($colors, $key);
+}
