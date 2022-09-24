@@ -6,14 +6,14 @@
         line-height: 1.14;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-        color: var(--FontColorFirst);
+        color: getColor('FontColorFirst');
     }
 
     &__text {
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
-        color: var(--FontColorSecond);
+        color: getColor('FontColorSecond');
         width: 270px;
         height: 75px;
     }
@@ -24,11 +24,11 @@
         border-radius: 4px;
         margin: 0 auto;
         border: 0;
-        background-color: var(--ColorAlmostWhite);
+        background-color: getColor('ColorAlmostWhite');
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
         &:hover {
-            fill: var(--SelectionColor);
+            fill: getColor('SelectionColor');
             transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
     }
@@ -41,10 +41,10 @@
         position: absolute;
         bottom: 4px;
         left: 0;
-        color: var(--ColorWhite);
+        color: getColor('ColorWhite');
         padding: 27px 0;
         width: 100%;
-        background-color: #2f303acc;
+        background-color: getColor('WeDoBoxTranspColor');
         align-items: center;
         display: flex;
         justify-content: center;
@@ -55,7 +55,7 @@
 }
 
 .item {
-    background-color: var(--ColorWhite);
+    background-color: getColor('ColorWhite');
     box-shadow:
         0px 1px 3px rgb(0 0 0 / 12%),
         0px 1px 1px rgb(0 0 0 / 14%),
@@ -78,7 +78,7 @@
         font-size: 16px;
         line-height: 1.187;
         letter-spacing: 0.03em;
-        color: var(--FontColorSecond);
+        color: getColor('FontColorSecond');
         margin: 0 auto;
         text-align: center;
         padding-bottom: 16px;
@@ -92,40 +92,40 @@
         padding-bottom: 30px;
         gap: 10px;
     }
+}
 
-    &__icon-sm {
-        width: 44px;
-        height: 44px;
-        margin: 0;
-        border: 0px;
-        fill: var(--ColorLightGray);
+.item__icon-sm {
+    width: 44px;
+    height: 44px;
+    margin: 0;
+    border: 0px;
+    border-radius: 50%;
+    fill: getColor('ColorLightGray');
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        border-color: getColor('SelectionColor');
         border-radius: 50%;
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-        &:hover {
-            border-color: var(--SelectionColor);
-            border-radius: 50%;
-            fill: white;
-            background-color: var(--SelectionColor);
-            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-                fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        }
+        fill: getColor('ColorWhite');
+        background-color: getColor('SelectionColor');
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
 
 .clients__icon {
+    border: 1px solid getColor('ColorLightGray');
+    fill: getColor('ColorLightGray');
     width: 170px;
     height: 92px;
     border-radius: 4px;
     margin: 0 auto;
-    border: 1px solid var(--ColorLightGray);
-    fill: var(--ColorLightGray);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover {
-        fill: var(--SelectionColor);
-        border-color: var(--SelectionColor);
+        fill: getColor('SelectionColor');
+        border-color: getColor('SelectionColor');
         cursor: pointer;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
             fill 250ms cubic-bezier(0.4, 0, 0.2, 1);

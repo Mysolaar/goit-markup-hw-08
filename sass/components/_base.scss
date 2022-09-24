@@ -19,8 +19,8 @@
 }
 
 body {
-    background-color: var(--BackgroundColorFirst);
-    color: var(--FontColorFirst);
+    background-color: getColor('BackgroundColorFirst');
+    color: getColor('FontColorFirst');
     font-family: "Roboto", "Raleway", 'Verdana',
         'Tahoma', sans-serif;
     margin: 0 auto;
@@ -36,14 +36,14 @@ p {
 }
 
 .main--white {
-    background: var(--ColorWhite);
+    background: getColor('ColorWhite');
 }
 
 .section {
     padding: 94px 0 94px 0;
 
     &--lightgray {
-        background: var(--ColorAlmostWhite);
+        background: getColor('ColorAlmostWhite');
     }
 
     &--darkgrey {
@@ -68,7 +68,7 @@ p {
         letter-spacing: 0.06em;
         text-align: center;
         text-transform: uppercase;
-        color: var(--ColorWhite);
+        color: getColor('ColorWhite');
         width: 696px;
         height: 120px;
     }

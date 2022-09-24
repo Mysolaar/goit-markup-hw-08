@@ -1,5 +1,5 @@
 .header {
-    background: var(--ColorWhite);
+    background: getColor('ColorWhite');
 
     &__container {
         width: 1200px;
@@ -9,13 +9,13 @@
     }
 
     &__link {
-        color: var(--FontColorSecond);
-        fill: var(--FontColorSecond);
+        color: getColor('FontColorSecond');
+        fill: getColor('FontColorSecond');
         transition: var(--transition);
 
         &:hover {
-            color: var(--SelectionColor);
-            fill: var(--SelectionColor);
+            color: getColor('SelectionColor');
+            fill: getColor('SelectionColor');
             transition: var(--transition);
         }
     }
@@ -32,7 +32,7 @@
             margin: 0;
     
         &--color-other {
-                color: var(--FontColorFirst);
+                color: getColor('FontColorFirst');
             }
         }
 
@@ -51,7 +51,7 @@
         height: 80px;
         margin: 0 auto;
         padding-left: 15px;
-        border-bottom: 1px solid #ECECEC;
+        border-bottom: 1px solid getColor('LineColor');
     }
 
     &__row {
@@ -64,6 +64,7 @@
     margin-left: 77px;
 }
 
+// !!tego dziada nie ruszać, bo zepsuje kontakty w header -> on równa icony z mail i tel
 .link.header__link {
     display: flex;
     align-items: center;

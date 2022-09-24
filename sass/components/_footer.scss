@@ -1,6 +1,6 @@
 .footer {
 
-    background-color: var(--BackgroundColorSecond);
+    background-color: getColor('BackgroundColorSecond');
     max-height: 252px;
     padding: 60px 0 60px 0px;
     margin: 0 auto;
@@ -19,12 +19,12 @@
         font-size: 26px;
         line-height: 1.19;
         letter-spacing: 0.03em;
-        color: var(--SelectionColor);
+        color: getColor('SelectionColor');
         text-decoration: none;
         margin: 0;
 
         &--color-other {
-            color: var(--ColorWhite);
+            color: getColor('ColorWhite');
         }
     }
 
@@ -32,13 +32,13 @@
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
-        color: var(--FontColorSecond);
+        color: getColor('FontColorSecond');
         padding: 9px 0 0 0;
         margin: 0;
         transition: var(--transition);
 
         &:focus {
-            color: var(--SelectionColor);
+            color: getColor('SelectionColor');
             transition: var(--transition);
         }
     }
@@ -50,7 +50,7 @@
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
-        color: var(--ColorWhite);
+        color: getColor('ColorWhite');
         padding-top: 20px;
     }
 
@@ -59,15 +59,15 @@
         height: 44px;
         margin: 0;
         border: 0px;
-        fill: white;
-        border-color: var(--SelectionColor);
+        fill: getColor('ColorWhite');
+        border-color: getColor('SelectionColor');
         border-radius: 50%;
-        background: rgba(255, 255, 255, 0.1);
+        background: getColor('ColorBlackTransp');
         transition: var(--transition);
 
 
         &:hover {
-            background-color: var(--SelectionColor);
+            background-color: getColor('SelectionColor');
             transition: var(--transition);
         }
     }
@@ -84,7 +84,7 @@
         font-size: 14px;
         line-height: 16px;
         letter-spacing: 0.03em;
-        color: #FFFFFF;
+        color: getColor('ColorWhite');
     }
 
     &__icon-gap {
@@ -99,11 +99,11 @@
     &__btn-submit {
         width: 200px;
         height: 50px;
-        background-color: var(--SelectionColor);
+        background-color: getColor('SelectionColor');
         border: 0;
         border-radius: 4px;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        color: var(--ColorWhite);
+        color: getColor('ColorWhite');
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 700;
@@ -112,35 +112,35 @@
         margin: 0;
         padding: 0;
         display: flex;
-        fill: var(--ColorWhite);
+        fill: getColor('ColorWhite');
         cursor: pointer;
         justify-content: center;
         align-items: center;
 
         &:hover,
         &:focus {
-            background-color: var(--ColorAlmostWhite);
-            color: var(--FontColorFirst);
+            background-color: getColor('ColorAlmostWhite');
+            color: getColor('FontColorFirst');
             cursor: pointer;
             transition: var(--transition);
-            fill: var(--FontColorFirst);
+            fill: getColor('FontColorFirst');
         }
     }
 
     &__newsletter-input {
         box-sizing: border-box;
-        border: 1px solid rgba(255, 255, 255, 0.3);
+        border: 1px solid getColor('ColorGrayTransp');
         border-radius: 4px;
         width: 358px;
         height: 50px;
-        background-color: #2F303A;
+        background-color: getColor('BackgroundColorSecond');
         margin: 0;
         padding: 16px;
-        color: rgba(255, 255, 255, 0.6);
+        color: getColor('ColorWhiteTransp');
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 
         &::placeholder {
-            color: rgba(255, 255, 255, 0.6);
+            color: getColor('ColorWhiteTransp');
             padding-left: 15px;
             font-family: 'Roboto';
             font-style: normal;
@@ -148,21 +148,21 @@
             font-size: 16px;
             line-height: 20px;
             letter-spacing: 0.03em;
-            border-color: rgba(255, 255, 255, 0.3);
+            border-color: getColor('ColorGrayTransp');
         }
 
         &:placeholder-shown {
-            border: 1px solid rgba(255, 255, 255, 0.3);
+            border: 1px solid getColor('ColorGrayTransp');
         }
 
         &:not(:placeholder-shown) {
-            border: 1px solid rgba(255, 255, 255, 0.3);
+            border: 1px solid getColor('ColorGrayTransp');
         }
 
         &:hover,
         &:focus,
         &:active {
-            border: 1px solid rgba(255, 255, 255, 0.3);
+            border: 1px solid getColor('ColorGrayTransp');
         }
     }
 

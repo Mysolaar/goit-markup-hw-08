@@ -5,7 +5,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background-color: var(--ColorWhite);
+    background-color: getColor('ColorWhite');
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -24,7 +24,7 @@
     height: 100vh;
     left: 0px;
     top: 0px;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: getColor('ModalBGColor');
 }
 
 .modal__btn {
@@ -41,17 +41,17 @@
     width: 30px;
     position: absolute;
     height: 30px;
-    background-color: var(--ColorWhite);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    fill: black;
+    background-color: getColor('ColorWhite');
+    border: 1px solid getColor('BlackTranspLess');
+    fill: getColor('ColorBlack');
     transition: var(--transition);
 }
 
 .modal__btn:hover .modal__icon,
 .modal__btn:focus .modal__icon {
     cursor: pointer;
-    background-color: var(--SelectionColor);
-    fill: var(--ColorWhite);
+    background-color: getColor('SelectionColor');
+    fill: getColor('ColorWhite');
 }
 
 .modal__anime {
@@ -80,7 +80,7 @@
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--FontColorFirst);
+    color: getColor('FontColorFirst');
     margin-bottom: 0;
     margin-top: 40px;
     padding: 0;
@@ -101,7 +101,7 @@
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
-    color: var(--FontColorSecond);
+    color: getColor('FontColorSecond');
     margin-bottom: 4px;
     margin-top: 10px;
 }
@@ -120,12 +120,12 @@ input {
     height: 12px;
     margin-top: 18px;
     margin-left: 12px;
-    fill: var(--FontColorFirst);
+    fill: getColor('FontColorFirst');
 }
 
 .form__icon:hover,
 .form__icon:focus {
-    fill: var(--SelectionColor);
+    fill: getColor('SelectionColor');
     transition: var(--transition);
 }
 
@@ -146,7 +146,7 @@ input {
 
 .form__label:focus-within,
 .form__comment:focus-within {
-    fill: var(--SelectionColor);
+    fill: getColor('SelectionColor');
     transition: var(--transition);
 }
 
@@ -154,8 +154,8 @@ input {
 .form__label:focus-within .form__svg-tel,
 .form__label:focus-within .form__svg-mail,
 .form__label:focus-within .form__icon {
-    fill: var(--SelectionColor);
-    color: var(--SelectionColor);
+    fill: getColor('SelectionColor');
+    color: getColor('SelectionColor');
     transition: var(--transition);
 }
 
@@ -166,7 +166,7 @@ input {
     height: 40px;
     margin-top: 4px;
     text-indent: 42px;
-    color: var(--FontColorSecond);
+    color: getColor('FontColorSecond');
     font-size: 12px;
     display: block;
     background-repeat: no-repeat;
@@ -180,11 +180,11 @@ input {
     font-size: 12px;
     padding: 12px 16px;
     letter-spacing: 0.01em;
-    color: var(--FontColorFirst);
+    color: getColor('FontColorFirst');
     opacity: 50%;
     margin-top: 4px;
     resize: none;
-    border: 1px solid rgba(33, 33, 33, 0.2);
+    border: 1px solid getColor('ColorFormCommBorder');
     border-radius: 4px;
 }
 
@@ -192,7 +192,7 @@ input {
 .form__comment:hover,
 .form__svg:focus,
 .form__comment:focus {
-    border: 1px solid var(--SelectionColor);
+    border: 1px solid getColor('SelectionColor');
     border-radius: 4px;
     outline: none;
     transition: var(--transition);
@@ -212,7 +212,7 @@ input {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--FontColorSecond);
+    color: getColor('FontColorSecond');
     margin-left: 8px;
     transition: var(--transition);
 }
@@ -222,7 +222,7 @@ input {
     content: "";
     width: 16px;
     height: 15px;
-    outline: 1px solid var(--FontColorFirst);
+    outline: 1px solid getColor('FontColorFirst');
     border-radius: 2px;
     margin-right: 9px;
     transition: var(--transition);
@@ -232,7 +232,7 @@ input {
     padding-left: 3px;
     padding-right: 3px;
     text-decoration: none;
-    color: var(--SelectionColor);
+    color: getColor('SelectionColor');
     transition: var(--transition);
     transition-property: text-decoration, color;
     letter-spacing: 0.06em;
@@ -241,13 +241,13 @@ input {
 .form__links-check:hover {
     cursor: pointer;
     text-decoration: underline;
-    color: var(--SelectionColor);
+    color: getColor('SelectionColor');
     transition: var(--transition);
 }
 
 .form__icon-checkbox:checked+.form__icon-checked::before {
-    background-color: var(--SelectionColor);
-    outline: 1px solid var(--SelectionColor);
+    background-color: getColor('SelectionColor');
+    outline: 1px solid getColor('SelectionColor');
     border-radius: 2px;
     background-image: url(../images/checked.svg);
     background-repeat: no-repeat;
@@ -258,12 +258,12 @@ input {
 }
 
 .form__btn {
-    background: var(--SelectionColor);
+    background: getColor('SelectionColor');
     box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
     border-radius: 4px;
     line-height: 1.87;
     letter-spacing: 0.06em;
-    color: var(--ColorWhite);
+    color: getColor('ColorWhite');
     margin-top: 30px;
     border: 0px;
     cursor: pointer;
@@ -284,8 +284,8 @@ input {
 
 .form__btn:hover,
 .form__btn:focus {
-    background-color: var(--ColorWhite);
-    color: var(--FontColorFirst);
+    background-color: getColor('ColorWhite');
+    color: getColor('FontColorFirst');
     transition: var(--transition);
 }
 
@@ -306,5 +306,5 @@ input {
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
+    color: getColor('ColorFormPlaceholder');
 }

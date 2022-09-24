@@ -1,6 +1,6 @@
 .link {
     text-decoration: none;
-    color: var(--FontColorFirst);
+    color: getColor('FontColorFirst');
     font-weight: 500;
     padding: 12px;
     font-size: 14px;
@@ -10,17 +10,17 @@
     transition: var(--transition);
 
     &:hover {
-        color: var(--SelectionColor);
+        color: getColor('SelectionColor');
         transition: var(--transition);
     }
 
     &:focus {
-        color: var(--SelectionColor);
+        color: getColor('SelectionColor');
         transition: var(--transition);
     }
 
     &--active {
-        color: var(--SelectionColor);
+        color: getColor('SelectionColor');
         position: relative;
 
         &::after {
@@ -34,7 +34,7 @@
             border-radius: 2px;
             cursor: unset;
             pointer-events: none;
-            background-color: var(--SelectionColor);
+            background-color: getColor('SelectionColor');
             margin-left: 14px;
             transform: translateY(12px);
         }
@@ -42,8 +42,8 @@
 }
 
 .buttons {
-    background-color: var(--SelectionColor);
-    color: var(--ColorWhite);
+    background-color: getColor('SelectionColor');
+    color: getColor('ColorWhite');
     border-radius: 4px;
     font-weight: 700;
     font-size: 16px;
@@ -55,14 +55,14 @@
     transition: var(--transition);
 
     &:hover {
-        background-color: var(--ColorAlmostWhite);
-        color: var(--FontColorFirst);
+        background-color: getColor('ColorAlmostWhite');
+        color: getColor('FontColorFirst');
         cursor: pointer;
         transition: var(--transition);
     }
 
     &:focus {
-        background-color: var(--ColorAlmostWhite);
+        background-color: getColor('ColorAlmostWhite');
         color: var(--FontColorFirst);
         cursor: pointer;
         transition: var(--transition);
