@@ -18,26 +18,27 @@
         color: getColor('SelectionColor');
         transition: $transition;
     }
+}
 
-    &--active {
-        color: getColor('SelectionColor');
-        position: relative;
+.link--active {
+    color: getColor('SelectionColor');
+    position: relative;
+    @extend .link;
 
-        &::after {
-            position: absolute;
-            display: block;
-            content: "";
-            top: 45px;
-            left: 0;
-            width: 70%;
-            height: 4px;
-            border-radius: 2px;
-            cursor: unset;
-            pointer-events: none;
-            background-color: getColor('SelectionColor');
-            margin-left: 14px;
-            transform: translateY(12px);
-        }
+    &::after {
+        position: absolute;
+        display: block;
+        content: "";
+        top: 45px;
+        left: 0;
+        width: 70%;
+        height: 4px;
+        border-radius: 2px;
+        cursor: unset;
+        pointer-events: none;
+        background-color: getColor('SelectionColor');
+        margin-left: 14px;
+        transform: translateY(12px);
     }
 }
 

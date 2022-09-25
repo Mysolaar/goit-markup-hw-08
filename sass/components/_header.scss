@@ -5,18 +5,11 @@
         width: $boxWidth;
         @include margin-pading-null;
         display: flex;
+        @extend .header__flex;
     }
-
-    &__link {
-        color: getColor('FontColorSecond');
-        fill: getColor('FontColorSecond');
-        transition: $transition;
-
-        &:hover {
-            color: getColor('SelectionColor');
-            fill: getColor('SelectionColor');
-            transition: $transition;
-        }
+    &__item {
+        display: flex;
+        align-items: center;
     }
 
     &__link-logo {
@@ -51,12 +44,21 @@
         padding-left: 15px;
         border-bottom: 1px solid getColor('LineColor');
     }
+}
 
-    &__row {
-        display: flex;
-        align-items: center;
+.header__link {
+    @extend .link;
+    color: getColor('FontColorSecond');
+    fill: getColor('FontColorSecond');
+    transition: $transition;
+    
+    &:hover {
+        color: getColor('SelectionColor');
+        fill: getColor('SelectionColor');
+        transition: $transition;
     }
 }
+
 
 .navigation {
     margin-left: 77px;

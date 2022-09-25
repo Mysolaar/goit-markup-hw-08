@@ -9,6 +9,24 @@
         width: $boxWidth;
         @include margin-pading-null;
         display: flex;
+        gap: 70px;
+        margin: 0 auto;
+        width: $boxWidth;
+        padding-left: 15px;
+    }
+    &__contact{
+        @extend .going-to-column;
+    }
+    &__socials{
+        @extend .going-to-column;
+    }
+    &__newsletter{
+        @extend .going-to-column;
+
+    }
+    &__social-box{
+        @extend .going-to-row;
+        @extend .footer__icon-gap;
     }
 
     &__logo-link {
@@ -27,21 +45,6 @@
         }
     }
 
-    &__link {
-        font-size: 14px;
-        line-height: 1.71;
-        letter-spacing: 0.03em;
-        color: getColor('FontColorSecond');
-        padding: 9px 0 0 0;
-        margin: 0;
-        transition: $transition;
-
-        &:focus {
-            color: getColor('SelectionColor');
-            transition: $transition;
-        }
-    }
-
     &__address {
         font-family: getFont('first');
         font-style: normal;
@@ -51,6 +54,7 @@
         letter-spacing: 0.03em;
         color: getColor('ColorWhite');
         padding-top: 20px;
+        @extend .going-to-column;
     }
 
     &__icon-sm {
@@ -71,13 +75,6 @@
         }
     }
 
-    &__spacing {
-        gap: 70px;
-        margin: 0 auto;
-        width: $boxWidth;
-        padding-left: 15px;
-    }
-
     &__title {
         font-weight: 700;
         font-size: 14px;
@@ -95,77 +92,93 @@
         gap: 12px;
     }
 
-    &__btn-submit {
-        width: 200px;
-        height: 50px;
-        background-color: getColor('SelectionColor');
-        border: 0;
-        border-radius: 4px;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        color: getColor('ColorWhite');
-        font-family: getFont('first');
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 30px;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        fill: getColor('ColorWhite');
-        cursor: pointer;
-        justify-content: center;
-        align-items: center;
-
-        &:hover,
-        &:focus {
-            background-color: getColor('ColorAlmostWhite');
-            color: getColor('FontColorFirst');
-            cursor: pointer;
-            transition: $transition;
-            fill: getColor('FontColorFirst');
-        }
-    }
-
-    &__newsletter-input {
-        box-sizing: border-box;
-        border: 1px solid getColor('ColorGrayTransp');
-        border-radius: 4px;
-        width: 358px;
-        height: 50px;
-        background-color: getColor('BackgroundColorSecond');
-        margin: 0;
-        padding: 16px;
-        color: getColor('ColorWhiteTransp');
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-
-        &::placeholder {
-            color: getColor('ColorWhiteTransp');
-            padding-left: 15px;
-            font-family: getFont('first');
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 20px;
-            letter-spacing: 0.03em;
-            border-color: getColor('ColorGrayTransp');
-        }
-
-        &:placeholder-shown {
-            border: 1px solid getColor('ColorGrayTransp');
-        }
-
-        &:not(:placeholder-shown) {
-            border: 1px solid getColor('ColorGrayTransp');
-        }
-
-        &:hover,
-        &:focus,
-        &:active {
-            border: 1px solid getColor('ColorGrayTransp');
-        }
-    }
-
     &__btn-icon {
         margin-left: 24px;
+    }
+}
+
+.footer__newsletter-input {
+    box-sizing: border-box;
+    border: 1px solid getColor('ColorGrayTransp');
+    border-radius: 4px;
+    width: 358px;
+    height: 50px;
+    background-color: getColor('BackgroundColorSecond');
+    margin: 0;
+    padding: 16px;
+    color: getColor('ColorWhiteTransp');
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+    &::placeholder {
+        color: getColor('ColorWhiteTransp');
+        padding-left: 15px;
+        font-family: getFont('first');
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.03em;
+        border-color: getColor('ColorGrayTransp');
+    }
+
+    &:placeholder-shown {
+        border: 1px solid getColor('ColorGrayTransp');
+    }
+
+    &:not(:placeholder-shown) {
+        border: 1px solid getColor('ColorGrayTransp');
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+        border: 1px solid getColor('ColorGrayTransp');
+    }
+}
+
+.footer__btn-submit {
+    width: 200px;
+    height: 50px;
+    background-color: getColor('SelectionColor');
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    color: getColor('ColorWhite');
+    font-family: getFont('first');
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    fill: getColor('ColorWhite');
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+
+    &:hover,
+    &:focus {
+        background-color: getColor('ColorAlmostWhite');
+        color: getColor('FontColorFirst');
+        cursor: pointer;
+        transition: $transition;
+        fill: getColor('FontColorFirst');
+    }
+}
+
+.footer__link {
+    @extend .link;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: getColor('FontColorSecond');
+    padding: 9px 0 0 0;
+    margin: 0;
+    transition: $transition;
+
+    &:focus {
+        color: getColor('SelectionColor');
+        transition: $transition;
     }
 }

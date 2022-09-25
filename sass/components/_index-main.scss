@@ -1,4 +1,27 @@
+.order{
+&__section{
+    @extend .section;
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url("../images/backgroundimg01.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+}
+
+&__container{
+    @extend .section__container;
+    @extend .going-to-column;
+    @extend .section__flex;
+}
+
+&__main-title{
+    @extend .section__main-title;
+}
+}
+
 .list {
+    @extend .going-to-row;
+    @extend .spacing-flex;
 
     &__title {
         font-weight: 700;
@@ -33,10 +56,14 @@
     }
 }
 
-.what-we-do-box {
-    position: relative;
+.offer{
+    &__list{
+        @extend .section__spacing;
+    }
+&__box {
+    position: relative;}
 
-    &__description {
+&__description {
         position: absolute;
         bottom: 4px;
         left: 0;
@@ -53,16 +80,27 @@
     }
 }
 
-.item {
+// team
+
+.team {
+    @extend .section__container;
+    &__title {
+        @extend .section__title;
+    }
+    &__list{
+        @extend .section__spacing;
+    }
+
+&__item {
     background-color: getColor('ColorWhite');
     box-shadow:
         0px 1px 3px rgb(0 0 0 / 12%),
         0px 1px 1px rgb(0 0 0 / 14%),
         0px 2px 1px rgb(0 0 0 / 20%);
     border-radius: 0px 0px 4px 4px;
-    @include margin-pading-null;
+    @include margin-pading-null;}
 
-    &__name {
+&__name {
         font-weight: 500;
         font-size: 16px;
         line-height: 1.187;
@@ -72,7 +110,7 @@
         padding: 30px 0 10px 0;
     }
 
-    &__description {
+&__description {
         font-size: 16px;
         line-height: 1.187;
         letter-spacing: 0.03em;
@@ -82,7 +120,7 @@
         padding-bottom: 16px;
     }
 
-    &__container {
+&__container {
         display: flex;
         justify-content: center;
         margin: 0 auto;
@@ -92,7 +130,7 @@
     }
 }
 
-.item__icon-sm {
+.team__icon-sm {
     width: 44px;
     height: 44px;
     margin: 0;
@@ -107,6 +145,20 @@
         fill: getColor('ColorWhite');
         background-color: getColor('SelectionColor');
         transition: $transition;
+    }
+}
+
+// team
+
+.clients{
+    @extend .section__container;
+    @extend .going-to-column;
+
+    &__list {
+        @extend .section__spacing;
+    }
+    &__title {
+        @extend .section__title;
     }
 }
 

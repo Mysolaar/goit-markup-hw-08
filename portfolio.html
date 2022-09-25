@@ -19,39 +19,29 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__container header__flex">
-        <div class="header__row">
+      <div class="header__container">
+        <div class="header__item">
           <a class="header__link-logo" href="index.html">Web<span class="header__link-logo--color-other">Studio</span></a>
           <nav class="navigation">
             <a class="link" href="index.html">Agencja</a>
-            <a class="link link--active" href="portfolio.html">Portfolio</a>
+            <a class="link--active" href="portfolio.html">Portfolio</a>
             <a href="#" class="link">Kontakt</a>
           </nav>
         </div>
         <ul class="header__contact">
           <li>
-            <a class="link header__link" href="mailto:info@devstudio.com"
-              ><svg viewbox="0 0 1 1" height="16px">
-                <use href="./images/icons.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
+            <a class="header__link" href="mailto:info@devstudio.com"><svg viewbox="0 0 1 1" height="16px"><use href="./images/icons.svg#icon-envelope"></use></svg> info@devstudio.com</a>
           </li>
           <li>
-            <a class="link header__link" href="tel:+48111111111">
-              <svg viewbox="0 0 1 1" height="16px">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>
-              +48 111 111 111</a
-            >
+            <a class="header__link" href="tel:+48111111111"><svg viewbox="0 0 1 1" height="16px"><use href="./images/icons.svg#icon-smartphone"></use></svg> +48 111 111 111</a>
           </li>
         </ul>
       </div>
     </header>
-    <main class="main main--white">
+    <main class="main">
       <section class="section">
-        <div class="section__container portfolio-buttons-flex">
-          <ul class="pfolio-btn">
+        <div class="pfolio-btn">
+          <ul class="pfolio-btn__list">
             <li>
               <button class="pfolio-btn__buttons" type="button">
                 Wszystkie
@@ -76,9 +66,9 @@
           </ul>
         </div>
         <div class="section__container pfolio-spacing-flex">
-          <ul class="wraping-flex spacing-flex">
+          <ul class="pfolio-item">
             <li>
-              <figure class="pfolio-item pfolio-item__box">
+              <figure class="pfolio-item__box">
                 <img
                   class="pfolio-item__image"
                   src="./images/imgP01.jpg"
@@ -99,7 +89,7 @@
               </figure>
             </li>
             <li>
-              <figure class="pfolio-item pfolio-item__box">
+              <figure class="pfolio-item__box">
                 <img
                   class="pfolio-item__image"
                   src="./images/imgP02.jpg"
@@ -119,7 +109,7 @@
               </figure>
             </li>
             <li>
-              <figure class="pfolio-item pfolio-item__box">
+              <figure class="pfolio-item__box">
                 <img
                   class="pfolio-item__image"
                   src="./images/imgP03.jpg"
@@ -137,7 +127,7 @@
               </figure>
             </li>
             <li>
-              <figure class="pfolio-item pfolio-item__box">
+              <figure class="pfolio-item__box">
                 <img
                   class="pfolio-item__image"
                   src="./images/imgP04.jpg"
@@ -153,7 +143,7 @@
               </figure>
             </li>
             <li>
-              <figure class="pfolio-item pfolio-item__box">
+              <figure class="pfolio-item__box">
                 <img
                   class="pfolio-item__image"
                   src="./images/imgP05.jpg"
@@ -169,7 +159,7 @@
               </figure>
             </li>
             <li>
-              <figure class="pfolio-item pfolio-item__box">
+              <figure class="pfolio-item__box">
                 <img
                   class="pfolio-item__image"
                   src="./images/imgP06.jpg"
@@ -187,7 +177,7 @@
               </figure>
             </li>
             <li>
-              <figure class="pfolio-item pfolio-item__box">
+              <figure class="pfolio-item__box">
                 <img
                   class="pfolio-item__image"
                   src="./images/imgP07.jpg"
@@ -205,7 +195,7 @@
               </figure>
             </li>
             <li>
-              <figure class="pfolio-item pfolio-item__box">
+              <figure class="pfolio-item__box">
                 <img
                   class="pfolio-item__image"
                   src="./images/imgP08.jpg"
@@ -221,7 +211,7 @@
               </figure>
             </li>
             <li>
-              <figure class="pfolio-item pfolio-item__box">
+              <figure class="pfolio-item__box">
                 <img
                   class="pfolio-item__image"
                   src="./images/imgP09.jpg"
@@ -241,87 +231,44 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__container footer__spacing">
-        <div class="going-to-column">
-          <a class="footer__logo-link" href="index.html"
-            >Web<span class="footer__logo-link--color-other">Studio</span></a
-          >
-          <address class="footer__address going-to-column">
+      <div class="footer__container">
+        <div class="footer__contact">
+          <a class="footer__logo-link" href="index.html">Web<span class="footer__logo-link--color-other">Studio</span></a>
+          <address class="footer__address">
             <p>m. Warszawa, Aleje Jerozolimskie 21</p>
-            <a class="link footer__link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-            <a class="link footer__link" href="tel:+48111111111"
-              >+48 111 111 111</a
-            >
+            <a class="footer__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a class="footer__link" href="tel:+48111111111">+48 111 111 111</a>
           </address>
         </div>
-        <div class="going-to-column">
+        <div class="footer__socials">
           <h4 class="footer__title">DOŁĄCZ DO NAS</h4>
-          <div class="going-to-row footer__icon-gap">
+          <div class="footer__social-box">
             <a href="#">
               <svg class="footer__icon-sm" width="44" height="44">
-                <use
-                  href="./images/icons.svg#icon-sm-instagram"
-                  width="20"
-                  height="20"
-                  x="12"
-                  y="12"
-                ></use>
+                <use href="./images/icons.svg#icon-sm-instagram" width="20" height="20" x="12" y="12"></use>
               </svg>
             </a>
             <a href="#">
               <svg class="footer__icon-sm" width="44" height="44">
-                <use
-                  href="./images/icons.svg#icon-sm-twitter"
-                  width="20"
-                  height="20"
-                  x="12"
-                  y="12"
-                ></use>
-              </svg>
+                <use href="./images/icons.svg#icon-sm-twitter" width="20" height="20" x="12" y="12"></use></svg>
             </a>
             <a href="#">
               <svg class="footer__icon-sm" width="44" height="44">
-                <use
-                  href="./images/icons.svg#icon-sm-facebook"
-                  width="20"
-                  height="20"
-                  x="12"
-                  y="12"
-                ></use>
-              </svg>
+              <use href="./images/icons.svg#icon-sm-facebook" width="20" height="20" x="12" y="12"></use></svg>
             </a>
             <a href="#">
               <svg class="footer__icon-sm" width="44" height="44">
-                <use
-                  href="./images/icons.svg#icon-sm-linkedin"
-                  width="20"
-                  height="20"
-                  x="12"
-                  y="12"
-                ></use>
-              </svg>
+                <use href="./images/icons.svg#icon-sm-linkedin" width="20" height="20" x="12" y="12"></use></svg>
             </a>
           </div>
         </div>
-        <div class="going-to-column">
+        <div class="footer__newsletter">
           <h4 class="footer__title">ZAPISZ SIĘ DO NEWSLETTERA</h4>
           <form class="footer__form" autocomplete="on">
             <label>
-              <input
-                type="email"
-                class="footer__newsletter-input"
-                name="mail"
-                placeholder="E-mail"
-              />
+              <input type="email" class="footer__newsletter-input" name="mail" placeholder="E-mail">
             </label>
-            <button type="submit" class="footer__btn-submit">
-              Zapisz się
-              <svg width="24" height="24" class="footer__btn-icon">
-                <use xlink:href="./images/icons.svg#icon-icon-send"></use>
-              </svg>
-            </button>
+            <button type="submit" class="footer__btn-submit">Zapisz się <svg width="24" height="24" class="footer__btn-icon"><use xlink:href="./images/icons.svg#icon-icon-send"></use></svg></button>
           </form>
         </div>
       </div>

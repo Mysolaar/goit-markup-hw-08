@@ -17,10 +17,10 @@ ul {
 }
 
 p {
-    margin: 0 auto
+    margin: 0 auto;
 }
 
-.main--white {
+.main {
     background: getColor('ColorWhite');
 }
 
@@ -31,18 +31,11 @@ p {
         background: getColor('ColorAlmostWhite');
     }
 
-    &--darkgrey {
-        background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url("../images/backgroundimg01.jpg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
     &__container {
         width: $boxWidth;
         @include margin-pading-null;
         display: flex;
+        @extend .going-to-column;
     }
 
     &__main-title {
@@ -71,13 +64,13 @@ p {
         height: 412px;
         @include margin-pading-null;
         }
-    
-    &__spacing {
-        display: flex;
-        justify-content: center;
-        gap: 30px;
-        @include margin-pading-null;
-        }
+}
+
+.section__spacing {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    @include margin-pading-null;
 }
 
 .going-to-row {
