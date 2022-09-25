@@ -24,19 +24,19 @@ p {
   background: #ffffff;
 }
 
-.section, .order__section {
+.section, .team, .slider {
   padding: 94px 0 94px 0;
 }
-.section--lightgray {
+.section--lightgray, .team {
   background: #f5f4fa;
 }
-.section__container, .pfolio-btn, .clients, .team, .order__container {
+.section__container, .pfolio-btn, .clients, .team__box, .slider__container {
   width: 1200px;
   margin: 0 auto;
   padding: 0;
   display: flex;
 }
-.section__main-title, .order__main-title {
+.section__main-title, .slider__main-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -54,7 +54,7 @@ p {
   text-align: center;
   letter-spacing: 0.03em;
 }
-.section__flex, .order__container {
+.section__flex, .slider__container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -76,7 +76,7 @@ p {
   flex-direction: row;
 }
 
-.going-to-column, .footer__address, .footer__newsletter, .footer__socials, .footer__contact, .section__container, .pfolio-btn, .clients, .team, .order__container {
+.going-to-column, .footer__address, .footer__newsletter, .footer__socials, .footer__contact, .section__container, .pfolio-btn, .clients, .team__box, .slider__container {
   display: flex;
   flex-direction: column;
 }
@@ -414,7 +414,7 @@ p {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.order__section {
+.slider {
   background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/backgroundimg01.jpg");
   background-size: cover;
   background-position: center;

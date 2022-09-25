@@ -1,12 +1,10 @@
-.order{
-&__section{
+.slider{
     @extend .section;
     background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url("../images/backgroundimg01.jpg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-}
+        url("../images/backgroundimg01.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
 &__container{
     @extend .section__container;
@@ -83,7 +81,11 @@
 // team
 
 .team {
-    @extend .section__container;
+    @extend .section;
+    @extend .section--lightgray;
+    &__box{
+    @extend .section__container;}
+    
     &__title {
         @extend .section__title;
     }
@@ -91,7 +93,7 @@
         @extend .section__spacing;
     }
 
-&__item {
+    &__item {
     background-color: getColor('ColorWhite');
     box-shadow:
         0px 1px 3px rgb(0 0 0 / 12%),
@@ -100,7 +102,7 @@
     border-radius: 0px 0px 4px 4px;
     @include margin-pading-null;}
 
-&__name {
+    &__name {
         font-weight: 500;
         font-size: 16px;
         line-height: 1.187;
@@ -109,8 +111,7 @@
         text-align: center;
         padding: 30px 0 10px 0;
     }
-
-&__description {
+    &__description {
         font-size: 16px;
         line-height: 1.187;
         letter-spacing: 0.03em;
@@ -120,7 +121,7 @@
         padding-bottom: 16px;
     }
 
-&__container {
+    &__container {
         display: flex;
         justify-content: center;
         margin: 0 auto;
