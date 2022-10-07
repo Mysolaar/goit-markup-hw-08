@@ -20,7 +20,7 @@ p {
   margin: 0 auto;
 }
 
-.main {
+.main__container {
   background: #ffffff;
 }
 
@@ -30,7 +30,7 @@ p {
 .section--lightgray, .team {
   background: #f5f4fa;
 }
-.section__container, .pfolio-btn, .clients, .team__box, .slider__container {
+.section__container, .pfolio-btn, .clients, .team__container, .slider__container {
   width: 1200px;
   margin: 0 auto;
   padding: 0;
@@ -76,7 +76,7 @@ p {
   flex-direction: row;
 }
 
-.going-to-column, .footer__address, .footer__newsletter, .footer__socials, .footer__contact, .section__container, .pfolio-btn, .clients, .team__box, .slider__container {
+.going-to-column, .footer__address, .footer__newsletter, .footer__socials, .footer__contact, .section__container, .pfolio-btn, .clients, .team__container, .slider__container {
   display: flex;
   flex-direction: column;
 }
@@ -494,7 +494,7 @@ p {
   text-align: center;
   padding-bottom: 16px;
 }
-.team__container {
+.team__box {
   display: flex;
   justify-content: center;
   margin: 0 auto;
