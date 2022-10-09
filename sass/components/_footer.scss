@@ -1,32 +1,36 @@
 .footer {
 
     background-color: getColor('BackgroundColorSecond');
-    max-height: 252px;
     padding: 60px 0 60px 0px;
     margin: 0 auto;
+    @extend .going-to-column;
 
     &__container {
-        width: 1200px;
-        @include margin-pading-null;
-        display: flex;
-        gap: 70px;
+        @extend .going-to-column;
+        gap: 60px;
         margin: 0 auto;
-        width: 1200px;
-        padding-left: 15px;
     }
-    &__contact{
+
+    &__contact {
         @extend .going-to-column;
+        justify-content: center;
     }
-    &__socials{
+
+    &__socials {
         @extend .going-to-column;
+        
     }
-    &__newsletter{
+
+    &__newsletter {
         @extend .going-to-column;
+        margin: 0;
 
     }
-    &__social-box{
+
+    &__social-box {
         @extend .going-to-row;
         @extend .footer__icon-gap;
+        justify-content: center;
     }
 
     &__logo-link {
@@ -39,6 +43,7 @@
         color: getColor('SelectionColor');
         text-decoration: none;
         margin: 0;
+        text-align: center;
 
         &--color-other {
             color: getColor('ColorWhite');
@@ -55,6 +60,7 @@
         color: getColor('ColorWhite');
         padding-top: 20px;
         @extend .going-to-column;
+        text-align: center;
     }
 
     &__icon-sm {
@@ -81,6 +87,7 @@
         line-height: 16px;
         letter-spacing: 0.03em;
         color: getColor('ColorWhite');
+        text-align: center;
     }
 
     &__icon-gap {
@@ -89,11 +96,16 @@
 
     &__form {
         display: flex;
+        flex-wrap: wrap;
         gap: 12px;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
     }
 
     &__btn-icon {
         margin-left: 24px;
+        
     }
 }
 
@@ -101,7 +113,9 @@
     box-sizing: border-box;
     border: 1px solid getColor('ColorGrayTransp');
     border-radius: 4px;
-    width: 358px;
+    min-width: 390px;
+    width: 100%;
+    max-width: 450px;
     height: 50px;
     background-color: getColor('BackgroundColorSecond');
     margin: 0;
@@ -182,3 +196,190 @@
         transition: $transition;
     }
 }
+
+
+
+// .footer {
+
+//     background-color: getColor('BackgroundColorSecond');
+//     max-height: 252px;
+//     padding: 60px 0 60px 0px;
+//     margin: 0 auto;
+
+//     &__container {
+//         width: 1200px;
+//         @include margin-pading-null;
+//         display: flex;
+//         gap: 70px;
+//         margin: 0 auto;
+//         width: 1200px;
+//         padding-left: 15px;
+//     }
+//     &__contact{
+//         @extend .going-to-column;
+//     }
+//     &__socials{
+//         @extend .going-to-column;
+//     }
+//     &__newsletter{
+//         @extend .going-to-column;
+
+//     }
+//     &__social-box{
+//         @extend .going-to-row;
+//         @extend .footer__icon-gap;
+//     }
+
+//     &__logo-link {
+//         font-family: getFont('secondary');
+//         font-style: normal;
+//         font-weight: 700;
+//         font-size: 26px;
+//         line-height: 1.19;
+//         letter-spacing: 0.03em;
+//         color: getColor('SelectionColor');
+//         text-decoration: none;
+//         margin: 0;
+
+//         &--color-other {
+//             color: getColor('ColorWhite');
+//         }
+//     }
+
+//     &__address {
+//         font-family: getFont('first');
+//         font-style: normal;
+//         font-weight: 400;
+//         font-size: 14px;
+//         line-height: 1.71;
+//         letter-spacing: 0.03em;
+//         color: getColor('ColorWhite');
+//         padding-top: 20px;
+//         @extend .going-to-column;
+//     }
+
+//     &__icon-sm {
+//         width: 44px;
+//         height: 44px;
+//         margin: 0;
+//         border: 0px;
+//         fill: getColor('ColorWhite');
+//         border-color: getColor('SelectionColor');
+//         border-radius: 50%;
+//         background: getColor('ColorBlackTransp');
+//         transition: $transition;
+
+
+//         &:hover {
+//             background-color: getColor('SelectionColor');
+//             transition: $transition;
+//         }
+//     }
+
+//     &__title {
+//         font-weight: 700;
+//         font-size: 14px;
+//         line-height: 16px;
+//         letter-spacing: 0.03em;
+//         color: getColor('ColorWhite');
+//     }
+
+//     &__icon-gap {
+//         gap: 10px;
+//     }
+
+//     &__form {
+//         display: flex;
+//         gap: 12px;
+//     }
+
+//     &__btn-icon {
+//         margin-left: 24px;
+//     }
+// }
+
+// .footer__newsletter-input {
+//     box-sizing: border-box;
+//     border: 1px solid getColor('ColorGrayTransp');
+//     border-radius: 4px;
+//     width: 358px;
+//     height: 50px;
+//     background-color: getColor('BackgroundColorSecond');
+//     margin: 0;
+//     padding: 16px;
+//     color: getColor('ColorWhiteTransp');
+//     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+//     &::placeholder {
+//         color: getColor('ColorWhiteTransp');
+//         padding-left: 15px;
+//         font-family: getFont('first');
+//         font-style: normal;
+//         font-weight: 400;
+//         font-size: 16px;
+//         line-height: 20px;
+//         letter-spacing: 0.03em;
+//         border-color: getColor('ColorGrayTransp');
+//     }
+
+//     &:placeholder-shown {
+//         border: 1px solid getColor('ColorGrayTransp');
+//     }
+
+//     &:not(:placeholder-shown) {
+//         border: 1px solid getColor('ColorGrayTransp');
+//     }
+
+//     &:hover,
+//     &:focus,
+//     &:active {
+//         border: 1px solid getColor('ColorGrayTransp');
+//     }
+// }
+
+// .footer__btn-submit {
+//     width: 200px;
+//     height: 50px;
+//     background-color: getColor('SelectionColor');
+//     border: 0;
+//     border-radius: 4px;
+//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//     color: getColor('ColorWhite');
+//     font-family: getFont('first');
+//     font-style: normal;
+//     font-weight: 700;
+//     font-size: 16px;
+//     line-height: 30px;
+//     margin: 0;
+//     padding: 0;
+//     display: flex;
+//     fill: getColor('ColorWhite');
+//     cursor: pointer;
+//     justify-content: center;
+//     align-items: center;
+
+//     &:hover,
+//     &:focus {
+//         background-color: getColor('ColorAlmostWhite');
+//         color: getColor('FontColorFirst');
+//         cursor: pointer;
+//         transition: $transition;
+//         fill: getColor('FontColorFirst');
+//     }
+// }
+
+// .footer__link {
+//     @extend .link;
+//     font-size: 14px;
+//     line-height: 1.71;
+//     letter-spacing: 0.03em;
+//     color: getColor('FontColorSecond');
+//     padding: 9px 0 0 0;
+//     margin: 0;
+//     transition: $transition;
+
+//     &:focus {
+//         color: getColor('SelectionColor');
+//         transition: $transition;
+//     }
+// }
