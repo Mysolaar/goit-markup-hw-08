@@ -705,13 +705,19 @@ img {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  margin: 0;
+  margin: 0 15px 0 15px;
 }
 .clients__container {
   min-width: 290px;
   max-width: 1200px;
   width: 100%;
   padding: 0;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.clients__box {
+  padding: 0 15px;
+  margin: 0 auto;
 }
 .clients__title {
   font-weight: 700;
@@ -726,6 +732,7 @@ img {
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
+  padding: 0;
 }
 .clients__item {
   width: 100%;
