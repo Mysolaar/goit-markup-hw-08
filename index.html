@@ -8,9 +8,14 @@
     <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
-    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
   </head>
   <body>
     <!-- HEADER -->
@@ -32,23 +37,34 @@
             <a class="header__link" href="tel:+48111111111"><svg viewbox="0 0 1 1" height="16px"><use href="./images/icons.svg#icon-smartphone"></use></svg> +48 111 111 111</a>
           </li>
         </ul>
+        <div class="header__mobile-menu">
+            <button class="header__mobile-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+              <svg class="header__mobile-icon" width="24px" height="24px">
+                <use href="./images/icons.svg#icon-menu_mobile"></use>
+              </svg>
+            </button>
+          </div>
       </div>
     </header>
     <main class="main__container">
       <!-- SLIDER -->
       <section class="slider">
         <div class="slider__container">
-          <h1 class="slider__main-title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-          <button class="buttons" type="button" data-modal-open>Zamów usługę</button>
+          <h1 class="slider__main-title">
+            EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
+          </h1>
+          <button class="buttons" type="button" data-modal-open>
+            Zamów usługę
+          </button>
         </div>
       </section>
+      <!-- SECTION LOREM -->
       <section class="section">
-        <!-- SECTION LOREM -->
-        <div class="section__container">
+        <div class="list__container">
           <ul class="list">
             <li class="list__item">
               <svg class="list__icon">
-                <use href=./images/icons.svg#icon-antenna-1 width="70" height="70" x="100" y="25"></use></svg>
+                <use class="list__svg" href=./images/icons.svg#icon-antenna-1 width="70" height="70"></use></svg>
               <h3 class="list__title">LOREM IPSUM</h3>
               <p class="list__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
@@ -57,7 +73,7 @@
             </li>
             <li>
               <svg class="list__icon">
-                <use href=./images/icons.svg#icon-clock-1 width="70" height="70" x="100" y="25"></use>
+                <use href=./images/icons.svg#icon-clock-1 width="70" height="70" ></use>
               </svg>
               <h3 class="list__title">LOREM IPSUM</h3>
               <p class="list__text">
@@ -67,7 +83,7 @@
             </li>
             <li>
               <svg class="list__icon">
-                <use href=./images/icons.svg#icon-diagram-1 width="70" height="70" x="100" y="25"></use>
+                <use href=./images/icons.svg#icon-diagram-1 width="70" height="70" ></use>
               </svg>
               <h3 class="list__title">LOREM IPSUM</h3>
               <p class="list__text">
@@ -77,7 +93,7 @@
             </li>
             <li>
               <svg class="list__icon">
-                <use href=./images/icons.svg#icon-astronaut-1 width="70" height="70" x="100" y="25"></use>
+                <use href=./images/icons.svg#icon-astronaut-1 width="70" height="70" ></use>
               </svg>
               <h3 class="list__title">LOREM IPSUM</h3>
               <p class="list__text">
@@ -88,15 +104,16 @@
           </ul>
         </div>
       </section>
+      <!-- WHAT WE DO -->
       <section class="section">
-        <!-- WHAT WE DO -->
-        <div class="section__container ">
+        <div class="section__container offer__container ">
         <h2 class="section__title">Czym się zajmujemy</h2>
         <figure class="offer">
           <ul class="offer__list">
             <li class="offer__box">
               <img
-                src="./images/img01.jpg"
+                src="./images/img01-1200@1x.jpg"
+                srcset="./images/img01-1200@2x.jpg 2x"
                 alt="rece piszace na klawiaturze"
                 width="370"
                 height="294"
@@ -105,7 +122,8 @@
             </li>
             <li class="offer__box">
               <img
-                src="./images/img02.jpg"
+                src="./images/img02-1200@1x.jpg"
+                srcset="./images/img02-1200@2x.jpg 2x"
                 alt="telefon dotykowy trzymany w jednej rece, druga dlon lezy na klawiaturze laptopa"
                 width="370"
                 height="294"
@@ -114,7 +132,8 @@
             </li>
             <li class="offer__box">
               <img
-                src="./images/img03.jpg"
+                src="./images/img03-1200@1x.jpg"
+                srcset="./images/img03-1200@2x.jpg 2x"
                 alt="rece trzymajace tablet i dlugopis, w tle blat biurka z komputerem stacjonarnym"
                 width="370"
                 height="294"
@@ -125,18 +144,17 @@
         </figure>
         </div>
       </section>
+      <!-- OUR TEAM -->
       <section class="team">
-        <!-- OUR TEAM -->
         <div class="team__container">
         <h2 class="team__title">Nasz zespół</h2>
         <ul class="team__list">
-          <li>
+          <li class="team__list-item">
             <figure class="team__item">
-              <img
-                src="./images/img04.jpg"
+              <img 
+                src="./images/img04-480@1x.jpg"
                 alt="John Doe, Product Designer"
-                width="270"
-                height="260"
+                srcset="./images/img04-480@2x.jpg 2x"
               />
               <figcaption>
                 <h4 class="team__name">John Doe</h4>
@@ -162,13 +180,12 @@
               </figcaption>
             </figure>
           </li>
-          <li>
+          <li class="team__list-item">
             <figure class="team__item">
-              <img
-                src="./images/img05.jpg"
-                alt="John Doe, Frontend Developer"
-                width="270"
-                height="260"
+              <img 
+                src="./images/img05-480@1x.jpg" 
+                alt="John Doe, Frontend Developer" 
+                srcset="./images/img05-480@2x.jpg 2x"
               />
               <figcaption>
                 <h4 class="team__name">John Doe</h4>
@@ -194,13 +211,12 @@
               </figcaption>
             </figure>
           </li>
-          <li>
+          <li class="team__list-item">
             <figure class="team__item">
-              <img
-                src="./images/img06.jpg"
-                alt="John Doe, Marketing"
-                width="270"
-                height="260"
+              <img 
+                src="./images/img06-480@1x.jpg" 
+                alt="John Doe, Marketing" 
+                srcset="./images/img06-480@2x.jpg 2x"
               />
               <figcaption>
                 <h4 class="team__name">John Doe</h4>
@@ -226,13 +242,12 @@
               </figcaption>
             </figure>
           </li>
-          <li>
+          <li class="team__list-item">
             <figure class="team__item">
-              <img
-                src="./images/img07.jpg"
-                alt="John Doe, UI Designer"
-                width="270"
-                height="260"
+              <img 
+                src="./images/img07-480@1x.jpg" 
+                alt="John Doe, UI Designer" 
+                srcset="./images/img07-480@2x.jpg 2x"
               />
               <figcaption>
                 <h4 class="team__name">John Doe</h4>
@@ -261,36 +276,36 @@
         </ul>
       </div>
       </section>
+      <!-- CLIENTS  -->
       <section class="section">
-        <!-- CLIENTS  -->
         <div class="clients">
         <h2 class="clients__title">Nasi klienci</h2>
         <figure class="clients__box">
           <ul class="clients__list">
             <li>
-              <svg class="clients__icon"><use href=./images/icons.svg#icon-LogoClient01 width="106" height="60" x="35" y="18"></use></svg>
+              <svg class="clients__icon"><use href=./images/icons.svg#icon-LogoClient01 width="106" height="60" x="55" y="18" ></use></svg>
             </li>
             <li>
-              <svg class="clients__icon"><use href=./images/icons.svg#icon-LogoClient02 width="106" height="60" x="35" y="18"></use></svg>
+              <svg class="clients__icon"><use href=./images/icons.svg#icon-LogoClient02 width="106" height="60" x="55" y="18"></use></svg>
             </li>
             <li>
-              <svg class="clients__icon"><use href=./images/icons.svg#icon-LogoClient03 width="106" height="60" x="35" y="18"></use></svg>
+              <svg class="clients__icon"><use href=./images/icons.svg#icon-LogoClient03 width="106" height="60" x="55" y="18"></use></svg>
             </li>
             <li>
-              <svg class="clients__icon"><use href=./images/icons.svg#icon-LogoClient04 width="106" height="60" x="35" y="18"></use></svg>
+              <svg class="clients__icon"><use href=./images/icons.svg#icon-LogoClient04 width="106" height="60" x="55" y="18"></use></svg>
             </li>
             <li>
-              <svg class="clients__icon"><use href=./images/icons.svg#icon-LogoClient05 width="106" height="60" x="35" y="18"></use></svg>
+              <svg class="clients__icon"><use href=./images/icons.svg#icon-LogoClient05 width="106" height="60" x="55" y="18"></use></svg>
             </li>
             <li>
-              <svg class="clients__icon"><use href=./images/icons.svg#icon-LogoClient06 width="106" height="60" x="35" y="18"></use></svg>
+              <svg class="clients__icon"><use href=./images/icons.svg#icon-LogoClient06 width="106" height="60" x="55" y="18"></use></svg>
             </li>
           </ul>
         </figure></div>
       </section>
     </main>
-    <footer class="footer">
-      <!-- FOOTER  -->
+    <!-- FOOTER  -->
+    <!-- <footer class="footer">
       <div class="footer__container">
         <div class="footer__contact">
           <a class="footer__logo-link" href="index.html">Web<span class="footer__logo-link--color-other">Studio</span></a>
@@ -332,8 +347,8 @@
           </form>
         </div>
       </div>
-    </footer>
-<!-- MODAL FORM  -->
+    </footer> -->
+    <!-- MODAL FORM  -->
     <div class="modal-background is-hidden" data-modal>
       <div class="modal modal__anime">
         <button class="modal__btn" data-modal-close>
@@ -350,37 +365,121 @@
         <form class="form" name="order form" method="POST">
           <h2 class="form__title">Zostaw swoje dane w formularzu poniżej</h2>
           <div class="form__input-box">
-            <label class="form__label" for="name">Imię
-              <input class="form__svg form__svg-name" type="text" name="name" id="name" required/>
-                <svg class="form__icon">
-                  <use href="./images/icons.svg#icon-form-name"></use>
-                </svg>
+            <label class="form__label" for="name"
+              >Imię
+              <input
+                class="form__svg form__svg-name"
+                type="text"
+                name="name"
+                id="name"
+                required
+              />
+              <svg class="form__icon">
+                <use href="./images/icons.svg#icon-form-name"></use>
+              </svg>
             </label>
-            <label class="form__label" for="phone">Telefon
-              <input class=" form__svg form__svg-tel" type="tel" name="phone" id="phone" required/>
-                <svg class="form__icon">
-                  <use href="./images/icons.svg#icon-form-tel"></use>
-                </svg>
+            <label class="form__label" for="phone"
+              >Telefon
+              <input
+                class="form__svg form__svg-tel"
+                type="tel"
+                name="phone"
+                id="phone"
+                required
+              />
+              <svg class="form__icon">
+                <use href="./images/icons.svg#icon-form-tel"></use>
+              </svg>
             </label>
-            <label class="form__label" for="user_mail">E-mail
-              <input class="form__svg form__svg-mail" type="email" name="mail" id="user_mail" required/>
-                <svg class="form__icon">
-                  <use href="./images/icons.svg#icon-form-mail"></use>
-                </svg>
+            <label class="form__label" for="user_mail"
+              >E-mail
+              <input
+                class="form__svg form__svg-mail"
+                type="email"
+                name="mail"
+                id="user_mail"
+                required
+              />
+              <svg class="form__icon">
+                <use href="./images/icons.svg#icon-form-mail"></use>
+              </svg>
             </label>
-            <label class="form__label">Komentarz
-              <textarea class="form__comment" name="consent" placeholder="Wprowadź tekst" rows="6"></textarea>
+            <label class="form__label"
+              >Komentarz
+              <textarea
+                class="form__comment"
+                name="consent"
+                placeholder="Wprowadź tekst"
+                rows="6"
+              ></textarea>
             </label>
             <label class="form__checkbox">
-		          <input class="form__icon-checkbox form__icon-checkbox--hidden" type="checkbox" name="checkbox"/>
-		            <span class ="form__icon-checked">Oświadczam, iż akceptuję <a href="#rules" class="form__links-check">Regulamin</a>
-                  i  <a href="#privacypolicy" class="form__links-check">Politykę Prywatności</a>.</span> 
+              <input
+                class="form__icon-checkbox form__icon-checkbox--hidden"
+                type="checkbox"
+                name="checkbox"
+              />
+              <span class="form__icon-checked"
+                >Oświadczam, iż akceptuję
+                <a href="#rules" class="form__links-check">Regulamin</a> i
+                <a href="#privacypolicy" class="form__links-check"
+                  >Politykę Prywatności</a
+                >.</span
+              >
             </label>
-            <button class="form__btn" type="submit"><span class="form__btn-send">Wyślij</span></button>
+            <button class="form__btn" type="submit">
+              <span class="form__btn-send">Wyślij</span>
+            </button>
           </div>
         </form>
       </div>
     </div>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+      <svg height="18.67px" width="18.67px" class="mobile__exit">
+        <use href="./images/icons.svg#icon-eX">
+        </use>
+      </svg>
+      </button>
+      <div>
+      <ul class="mobile-menu list-pages">
+        <li>
+         <a href="./index.html" class="list-pages__link active">Agencja</a>
+        </li>
+        <li>
+          <a href="./portfolio.html" class="list-pages__link">Portfolio</a>
+        </li>
+        <li>
+          <a href="#" class="list-pages__link">Kontakt</a>
+        </li>
+      </ul>
+      <ul class="mobile-menu list-contacts">
+          <li>
+            <a href="tel:+48111111111" class="list-contacts__phone">+48 111 111 111</a>
+          </li>
+          <li>
+            <a href="mailto:info@devstudio.com" class="list-contacts__mail">info@devstudio.com</a>
+          </li>
+      </ul>
+        <ul class="mobile-menu list-social">
+            <a href="https://instagram.com" class="list-social__item--link">Instagram</a>
+          </li>
+          <li class="list-social__item"></li>
+          <li>
+            <a href="https://twitter.com" class="list-social__item--link">Twitter</a>
+          </li>
+          <li class="list-social__item"></li>
+          <li>
+            <a href="https://facebook.com" class="list-social__item--link">Facebook</a>
+          </li>
+          <li class="list-social__item"></li>
+          <li>
+            <a href="https://linkedin.com" class="list-social__item--link">Linkedin</a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

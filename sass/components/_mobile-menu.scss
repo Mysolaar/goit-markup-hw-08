@@ -1,0 +1,123 @@
+.menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    fill: getColor('ColorBlack');
+    top: 21px;
+    right: 25px;
+
+    &:focus,
+    &:hover {
+        fill: getColor('SelectionColor');
+    }
+}
+
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 320px;
+    min-height: 100%;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 32px;
+    background-color: getColor('ColorWhite');
+    z-index: 10;
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+    transform: translateX(0);
+}
+
+.mobile-menu {
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    list-style: none;
+}
+
+.list-pages {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 36px;
+
+    &__link {
+        text-decoration: none;
+        color: getColor('ColorBlack');
+        font-size: 40px;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        display: inline;
+        line-height: 47px;
+    }
+}
+
+.active {
+    color: getColor('SelectionColor');
+}
+
+.list-contacts {
+    position: absolute;
+    bottom: 134px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    &__phone {
+        text-decoration: none;
+        font-size: 34px;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        color: getColor('SelectionColor');
+        line-height: 40px;
+    }
+
+    &__mail {
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        color: getColor('FontColorSecond');
+        line-height: 28px;
+    }
+}
+
+.list-social {
+    display: flex;
+    flex-flow: row wrap;
+    position: absolute;
+    bottom: 48px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    &__item {
+        line-height: 1.2;
+
+        &--link {
+            font-size: 18px;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            text-decoration: none;
+            color: getColor('SelectionColor');
+        }
+    }
+}
+
+.list-social__item:not(:last-child) {
+    padding-right: 10px;
+    border-right: 1px solid #999797bf;
+}
+
+@media screen and (min-width:768px) {
+    .menu-toggle {
+        display: none;
+    }
+}

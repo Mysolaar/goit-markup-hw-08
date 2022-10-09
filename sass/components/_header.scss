@@ -2,48 +2,34 @@
     background: getColor('ColorWhite');
 
     &__container {
-        width: $boxWidth;
-        @include margin-pading-null;
+        width: 100vw;
+        height: 60px;
         display: flex;
-        @extend .header__flex;
-    }
-    &__item {
-        display: flex;
+        justify-content: space-between;
         align-items: center;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 
     &__link-logo {
-            font-family: getFont('secondary');
-            font-style: normal;
-            font-weight: 700;
-            font-size: 26px;
-            line-height: 1.19;
-            letter-spacing: 0.03em;
-            color: getColor('SelectionColor');
-            text-decoration: none;
-            margin: 0;
-    
+        font-family: getFont('secondary');
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28.18px;
+        letter-spacing: 0.03em;
+        color: getColor('SelectionColor');
+        text-decoration: none;
+
         &--color-other {
-                color: getColor('FontColorFirst');
-            }
+            color: getColor('FontColorFirst');
         }
+    }
 
     &__contact {
-        @include flexRow;
-        gap: 50px;
-        ;
+        display: none;
     }
-
-    &__flex {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: $boxWidth;
-        height: 80px;
-        margin: 0 auto;
-        padding-left: 15px;
-        border-bottom: 1px solid getColor('LineColor');
-    }
+    
 }
 
 .header__link {
@@ -51,7 +37,7 @@
     color: getColor('FontColorSecond');
     fill: getColor('FontColorSecond');
     transition: $transition;
-    
+
     &:hover {
         color: getColor('SelectionColor');
         fill: getColor('SelectionColor');
@@ -59,14 +45,95 @@
     }
 }
 
-
 .navigation {
-    margin-left: 77px;
+    display: none;
 }
 
-// !!tego dziada nie ruszać, bo zepsuje kontakty w header -> on równa icony z mail i tel
-.link.header__link {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+
+.header__mobile-btn{
+    border: 0;
+    background-color: getColor('ColorWhite');
+
 }
+.header__mobile-icon{
+    fill: getColor('FontColorFirst');
+    margin: 0 auto;
+    cursor: pointer;
+    &:hover{
+        fill: getColor('SelectionColor');
+    }
+}
+
+
+// .header {
+//     background: getColor('ColorWhite');
+
+//     &__container {
+//         width: 1200px;
+//         @include margin-pading-null;
+//         display: flex;
+//         @extend .header__flex;
+//     }
+//     &__item {
+//         display: flex;
+//         align-items: center;
+//     }
+
+//     &__link-logo {
+//             font-family: getFont('secondary');
+//             font-style: normal;
+//             font-weight: 700;
+//             font-size: 26px;
+//             line-height: 1.19;
+//             letter-spacing: 0.03em;
+//             color: getColor('SelectionColor');
+//             text-decoration: none;
+//             margin: 0;
+    
+//         &--color-other {
+//                 color: getColor('FontColorFirst');
+//             }
+//         }
+
+//     &__contact {
+//         @include flexRow;
+//         gap: 50px;
+//         ;
+//     }
+
+//     &__flex {
+//         display: flex;
+//         align-items: center;
+//         justify-content: space-between;
+//         width: 1200px;
+//         height: 80px;
+//         margin: 0 auto;
+//         padding-left: 15px;
+//         border-bottom: 1px solid getColor('LineColor');
+//     }
+// }
+
+// .header__link {
+//     @extend .link;
+//     color: getColor('FontColorSecond');
+//     fill: getColor('FontColorSecond');
+//     transition: $transition;
+    
+//     &:hover {
+//         color: getColor('SelectionColor');
+//         fill: getColor('SelectionColor');
+//         transition: $transition;
+//     }
+// }
+
+
+// .navigation {
+//     margin-left: 77px;
+// }
+
+// // !!tego dziada nie ruszać, bo zepsuje kontakty w header -> on równa icony z mail i tel
+// .link.header__link {
+//     display: flex;
+//     align-items: center;
+//     gap: 10px;
+// }

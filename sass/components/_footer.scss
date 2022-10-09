@@ -6,12 +6,12 @@
     margin: 0 auto;
 
     &__container {
-        width: $boxWidth;
+        width: 1200px;
         @include margin-pading-null;
         display: flex;
         gap: 70px;
         margin: 0 auto;
-        width: $boxWidth;
+        width: 1200px;
         padding-left: 15px;
     }
     &__contact{
