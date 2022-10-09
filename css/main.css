@@ -430,7 +430,7 @@ img {
   border-radius: 4px;
   width: 90%;
   max-width: 450px;
-  min-width: 290px;
+  min-width: 320px;
   height: 50px;
   background-color: #2f303a;
   margin: 0;
@@ -716,6 +716,7 @@ img {
 .clients__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
   margin: 0 auto;
 }
