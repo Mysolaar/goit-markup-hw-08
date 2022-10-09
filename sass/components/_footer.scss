@@ -108,12 +108,16 @@
         
     }
 }
-
+.footer__label-input{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 .footer__newsletter-input {
     box-sizing: border-box;
     border: 1px solid getColor('ColorGrayTransp');
     border-radius: 4px;
-    width: 100%;
+    width: 90%;
     max-width: 450px;
     min-width: 290px;
     height: 50px;
