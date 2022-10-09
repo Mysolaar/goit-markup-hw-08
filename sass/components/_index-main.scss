@@ -192,17 +192,29 @@
     }
 }
 
+// NAPRAWIANIE ICON KLIENTÓW -START
+
 .clients {
-    margin: 0;
-    margin-top: 60px;
-    padding: 0;
-    padding-bottom: 60px;
     display: flex;
     flex-direction: column;
-    background-color: getColor('ColorWhite');
+    gap: 30px;
+    margin: 0;
 
-    &__box {
-        margin:0 auto;
+    &__container {
+        @extend .clients;
+        min-width: 290px;
+        max-width: 1200px;
+        width: 100%;
+        padding: 0 ;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-align: center;
     }
 
     &__list {
@@ -210,39 +222,102 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 30px;
-        margin: 0 auto;
     }
-    &__list-item{
+
+    &__item {
+        width: 100%;
+        height: 92px;
         flex-basis: calc((100% - 30px * 1) / 2);
-        margin: 0 auto;
-        padding: 0;
     }
 
-    &__title {
-        text-align: center;
-        padding-bottom: 30px;
-    }
-}
-
-
-.clients__icon {
-    border: 1px solid getColor('ColorLightGray');
-    fill: getColor('ColorLightGray');
-    width: 210px;
-    height: 92px;
-    border-radius: 4px;
-    margin: 0;
-    padding: 0;
-    transition: $transition;
-
-    &:hover {
-        fill: getColor('SelectionColor');
-        border-color: getColor('SelectionColor');
-        cursor: pointer;
+    &__icon {
+        fill: getColor('ColorLightGray');
         transition: $transition;
     }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: getColor('ColorWhite');
+        border: 1px solid getColor('ColorLightGray');
+        border-radius: 4px;
+        transition: $transition;
+        outline: none;
+
+        &:hover,
+        &:focus {
+            border-color: getColor('SelectionColor');
+            fill: getColor('SelectionColor');
+            transition: $transition;
+        }
+
+        &:hover .clients__icon,
+        &:focus .clients__icon {
+            border-color: getColor('SelectionColor');
+            fill: getColor('SelectionColor');
+            transition: $transition;
+        }
+    }
 }
 
+// NAPRAWIANIE ICON KLIENTÓW -ŚRODEK
+
+// .clients {
+//     margin: 0;
+//     margin-top: 60px;
+//     padding: 0;
+//     padding-bottom: 60px;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     background-color: getColor('ColorWhite');
+
+//     &__box {
+//         margin:0 auto;
+//     }
+
+//     &__list {
+//         display: flex;
+//         flex-wrap: wrap;
+//         justify-content: center;
+//         gap: 30px;
+//         margin: 0 auto;
+//     }
+//     &__list-item{
+//         flex-basis: calc((100% - 30px * 1) / 2);
+//         margin: 0 auto;
+//         padding: 0;
+//     }
+
+//     &__title {
+//         text-align: center;
+//         padding-bottom: 30px;
+//     }
+// }
+
+
+// .clients__icon {
+//     border: 1px solid getColor('ColorLightGray');
+    // fill: getColor('ColorLightGray');
+//     width: 210px;
+//     height: 92px;
+//     border-radius: 4px;
+//     margin: 0;
+//     padding: 0;
+//     transition: $transition;
+
+//     &:hover {
+//         fill: getColor('SelectionColor');
+//         border-color: getColor('SelectionColor');
+//         cursor: pointer;
+//         transition: $transition;
+//     }
+// }
+
+// NAPRAWIANIE ICON KLIENTÓW -KONIEC
 
 // .slider{
 //     @extend .section;
