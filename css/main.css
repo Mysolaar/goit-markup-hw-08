@@ -37,6 +37,7 @@ img {
 
 .section__container, .pfolio-btn, .offer__container {
   width: 320px;
+  max-width: 1200px;
 }
 
 .section__main-title, .slider__main-title {
@@ -191,6 +192,10 @@ img {
   display: none;
 }
 
+.header__cont-icon {
+  height: 10px;
+}
+
 .header__link {
   color: #757575;
   fill: #757575;
@@ -258,6 +263,36 @@ img {
     display: flex;
     align-items: center;
     gap: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    display: flex;
+    justify-content: center;
+  }
+  .header__container {
+    width: 1200px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-bottom: 1px solid #ececec;
+  }
+  .header__contact {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+  .header__link-logo {
+    margin-right: 93px;
+  }
+  .header__link {
+    font-size: 14px;
+  }
+  .header__cont-icon {
+    height: 16px;
   }
 }
 .menu-toggle {

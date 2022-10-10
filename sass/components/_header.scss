@@ -31,6 +31,9 @@
     }
     
 }
+.header__cont-icon{
+    height:10px;
+}
 
 .header__link {
     @extend .link;
@@ -115,6 +118,36 @@
 
 // DESCTOPOWO
 
+@media screen and (min-width: 1200px){
+    .header {
+        display: flex;
+        justify-content: center;
+        &__container {
+            width: 1200px;
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-right: 15px;
+            padding-left: 15px;
+            border-bottom: 1px solid getColor('LineColor');
+            }
+        &__contact {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+        }
+        &__link-logo {
+            margin-right: 93px;
+        }
+        &__link{
+            font-size: 14px;
+        }
+    }
+    .header__cont-icon{
+        height:16px;
+    }
+}
 
 
 
