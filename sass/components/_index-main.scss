@@ -137,10 +137,67 @@
     }
 }
 
-.offer__container{
-    @extend .section__container;
+// WHAT WE DO
+
+.offer__display-box{
     display: none;
 }
+.offer__container{
+    @extend .offer__display-box;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 1200px) {
+
+    .offer__display-box {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .offer {
+        &__container{
+            padding-top:34px;
+            padding-bottom: 94px;
+        }
+        &__title{
+            font-family: 'Roboto';
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 42px;
+            text-align: center;
+        }
+        &__list {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        &__box {
+            position: relative;
+        }
+
+        &__description {
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            color: getColor('ColorWhite');
+            padding: 27px 0;
+            width: 100%;
+            background-color: getColor('WeDoBoxTranspColor');
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            font-weight: 700;
+            line-height: 1.143;
+            text-transform: uppercase;
+        }
+    }
+}
+
+// OUR TEAM
 
 .team {
     margin: 0 auto;

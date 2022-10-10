@@ -35,7 +35,7 @@ img {
   margin: 0 auto;
 }
 
-.section__container, .pfolio-btn, .offer__container {
+.section__container, .pfolio-btn {
   width: 320px;
   max-width: 1200px;
 }
@@ -782,10 +782,58 @@ img {
     max-width: 270px;
   }
 }
-.offer__container {
+.offer__display-box, .offer__container {
   display: none;
 }
 
+.offer__container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .offer__display-box, .offer__container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .offer__container {
+    padding-top: 34px;
+    padding-bottom: 94px;
+  }
+  .offer__title {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+  }
+  .offer__list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .offer__box {
+    position: relative;
+  }
+  .offer__description {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    color: #ffffff;
+    padding: 27px 0;
+    width: 100%;
+    background-color: rgba(47, 48, 58, 0.8);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    line-height: 1.143;
+    text-transform: uppercase;
+  }
+}
 .team {
   margin: 0 auto;
   padding: 0;
