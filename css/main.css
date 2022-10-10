@@ -778,6 +778,7 @@ img {
   padding-bottom: 60px;
 }
 .team__title {
+  font-size: 28px;
   text-align: center;
 }
 .team__list {
@@ -857,6 +858,7 @@ img {
   width: 100%;
   padding: 0 15px;
   padding-bottom: 60px;
+  margin: 0 auto;
 }
 .clients__title {
   font-weight: 700;
