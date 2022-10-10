@@ -872,6 +872,7 @@ img {
   justify-content: center;
   gap: 30px;
   padding: 0;
+  margin: 0 auto;
 }
 .clients__list-item {
   flex-basis: calc((100% - 30px) / 2);
