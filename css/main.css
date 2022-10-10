@@ -613,6 +613,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .footer__container {
+    max-width: 1080px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -627,20 +628,25 @@ img {
     margin: 0 auto;
   }
   .footer__container {
+    max-width: 1200px;
     gap: 70px;
   }
   .footer__newsletter {
     display: flex;
+    flex-direction: column;
   }
   .footer__newsletter-input {
     width: 358px;
     max-width: 358px;
     height: 50px;
+    margin: 0;
   }
   .footer__form {
     display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
     gap: 12px;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
   }
   .footer__title {
@@ -653,9 +659,11 @@ img {
     text-align: left;
   }
   .footer__label-input {
+    margin: 0 auto;
+    padding: 0;
     display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
+    justify-content: flex-start;
+    width: 358px;
   }
 }
 .slider {

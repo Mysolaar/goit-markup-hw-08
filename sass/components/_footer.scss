@@ -207,6 +207,7 @@
     .footer {
 
         &__container {
+            max-width: 1080px;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
@@ -226,24 +227,31 @@
         margin: 0 auto;
 
         &__container {
+            max-width: 1200px;
             gap: 70px;
         }
 
         &__newsletter {
             display: flex;
+            flex-direction: column;
         }
 
         &__newsletter-input {
             width: 358px;
             max-width: 358px;
             height: 50px;
+            margin: 0;
         }
 
         &__form {
             display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
             gap: 12px;
-            margin: 0;
+            margin: 0 auto;
             padding: 0;
+            // width: 570px;
+            
         }
 
         &__title {
@@ -259,11 +267,14 @@
         }
 
         &__label-input {
+            margin: 0 auto;
+            padding: 0;
             display: flex;
-            flex-wrap: nowrap;
-            flex-direction: row;
+            justify-content: flex-start;
+            width: 358px;
         }
     }
+        
 }
 
 // .footer {
