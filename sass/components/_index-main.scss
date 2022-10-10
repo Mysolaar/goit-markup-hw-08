@@ -209,7 +209,30 @@
     }
 }
 
-// NAPRAWIANIE ICON KLIENTÓW -START
+@media screen and (min-width: 768px) {
+    .team {
+            &__list {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 30px;
+            }
+    
+            &__item {
+                flex-basis: calc((100% - 30px * 1) / 2);
+                max-width: 354px;
+            }
+        }
+    }
+
+@media screen and (min-width: 1200px) {
+    .team__item {
+            flex-basis: calc((100% - 30px * 3) / 4);
+            max-width: 270px;
+        }
+}
+
 
 .clients {
     display: flex;
@@ -227,15 +250,12 @@
         // margin: 0 auto;
         padding-bottom: 60px;
         margin: 0 auto;
+        padding-top: 60px;
     }
-    // &__box{
-    //     padding: 0;
-    //     margin: 0;
-    // }
 
     &__title {
         font-weight: 700;
-        font-size: 36px;
+        font-size: 28px;
         line-height: 1.16;
         text-align: center;
         letter-spacing: 0.03em;
@@ -262,18 +282,8 @@
         transition: $transition;
         align-self: center;
         width: 100px;
-        // height: 40%;
 
     }
-    // &__icon-box{
-    //     display: flex;
-    //     flex-direction: row;
-    //     // flex-wrap: wrap;
-    //     justify-content: center;
-    //     gap: 30px;
-    //     row-gap: 30px;
-    //     padding-bottom: 30px;
-    // }
 
     &__link {
         display: flex;
@@ -314,10 +324,12 @@
     .clients__list-item {
         flex-basis: calc((100% - 30px * 5) / 6);
         width: 170px;
+        &__title{
+            font-size: 36px;
+        }
     }
 }
 
-// NAPRAWIANIE ICON KLIENTÓW -ŚRODEK
 
 // .clients {
 //     margin: 0;
