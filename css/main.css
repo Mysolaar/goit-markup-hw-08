@@ -759,6 +759,29 @@ img {
   height: 70px;
 }
 
+@media screen and (min-width: 768px) {
+  .list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 738px;
+  }
+  .list__list-item {
+    flex-basis: calc((100% - 30px) / 2);
+    max-width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .list {
+    max-width: 1170px;
+  }
+  .list__list-item {
+    flex-basis: calc((100% - 90px) / 4);
+    max-width: 270px;
+  }
+}
 .offer__container {
   display: none;
 }
@@ -778,8 +801,11 @@ img {
   padding-bottom: 60px;
 }
 .team__title {
+  font-family: "Roboto";
+  font-weight: 700;
   font-size: 28px;
   text-align: center;
+  padding-bottom: 20px;
 }
 .team__list {
   margin: 0 auto;
@@ -864,6 +890,9 @@ img {
     flex-basis: calc((100% - 90px) / 4);
     max-width: 270px;
   }
+  .team__title {
+    font-size: 36px;
+  }
 }
 .clients, .clients__container {
   display: flex;
@@ -881,6 +910,7 @@ img {
   padding-top: 60px;
 }
 .clients__title {
+  font-family: "Roboto";
   font-weight: 700;
   font-size: 28px;
   line-height: 1.16;

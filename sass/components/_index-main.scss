@@ -109,6 +109,34 @@
     
 }
 
+@media screen and (min-width: 768px) {
+
+    .list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        max-width: 738px;
+    }
+
+    .list__list-item {
+        flex-basis: calc((100% - 30px * 1) / 2);
+        max-width: 354px;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .list{
+        max-width: 1170px;
+    }
+    .list__list-item {
+        flex-basis: calc((100% - 30px * 3) / 4);
+        max-width: 270px;
+    }
+}
+
 .offer__container{
     @extend .section__container;
     display: none;
@@ -131,8 +159,11 @@
     }
 
     &__title {
+        font-family: 'Roboto';
+        font-weight: 700;
         font-size: 28px;
         text-align: center;
+        padding-bottom: 20px;
     }
 
     &__list {
@@ -231,6 +262,9 @@
             flex-basis: calc((100% - 30px * 3) / 4);
             max-width: 270px;
         }
+    .team__title{
+        font-size: 36px;
+    }
 }
 
 
@@ -254,6 +288,7 @@
     }
 
     &__title {
+        font-family: 'Roboto';
         font-weight: 700;
         font-size: 28px;
         line-height: 1.16;
